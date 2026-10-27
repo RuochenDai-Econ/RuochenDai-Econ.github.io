@@ -15,11 +15,11 @@ python3 -m http.server 8765 --bind 127.0.0.1
 ## 修改内容
 
 - `content/profile.json`：简介、职位、邮箱和 CV 文件路径。
-- `content/papers.json`：论文标题、作者（保留论文署名顺序）、期刊、年份、摘要、PDF 和 DOI。
+- `content/papers.json`：论文标题、作者（保留论文署名顺序）、期刊、年份、卷（`volume`）、期（`number`）、页码（`pages`，用 `--` 连接）、文章编号（`article_number`）、摘要、PDF 和 DOI。
 - `papers/`：对外提供的论文 PDF 与 BibTeX。
 - `cv/ruochen-dai-cv-2025.pdf`：用户提供的 Overleaf 项目中 `cv2025.tex` 的公开版本，已按作者要求删除手机号和具体办公室信息。此文件含早期论文状态；网页列表独立使用最新材料。
 - `assets/style.css`：字号、颜色、间距与手机布局。
-- `scripts/build.py`：用 Python 标准库生成静态 HTML 和 BibTeX。网站运行不依赖 Python 或 JavaScript。
+- `scripts/build.py`：用 Python 标准库生成首页、三个独立论文分类页和 BibTeX。网站运行不依赖 Python 或 JavaScript。
 
 修改内容后运行：
 
@@ -48,3 +48,11 @@ python3 scripts/build.py
 目标地址：https://ruochendai-econ.github.io/
 
 作者论文与照片的相关权利保留；本仓库不对这些材料授予额外使用许可。
+
+## 论文分类与引文
+
+Research 下的 English Publications、中文发表、Working Papers 分别显示 6、8、2 篇论文；摘要用原生 HTML details 默认收起，不依赖 JavaScript。
+
+BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为兼容传统 BibTeX 样式，Elsevier 文章编号也输出在 `pages` 中；`note` 只记录 Forthcoming / Working paper。没有正式卷期的论文不编造卷期。网页与 BibTeX 共用这些结构化字段。
+
+本轮核对以所提供 PDF 为基础，并补充 [JLEO 正式卷期 42(3):906–933](https://academic.oup.com/jleo/issue/42/3)、[AEJ 论文 DOI 与 forthcoming 状态](https://www.aeaweb.org/articles?id=10.1257/mac.20240030)、[经济管理学刊 3(2):55–82](https://ccj.pku.edu.cn/article/info?id=581530139787333)。

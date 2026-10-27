@@ -1,4 +1,4 @@
-"""Build the two static pages using Python's standard library.
+"""Build the static homepage and three research category pages using Python's standard library.
 
 Edit content/papers.json for research entries and content/profile.json for the
 biography. Run python3 scripts/build.py, then commit the generated HTML too.
@@ -14,7 +14,7 @@ profile = json.loads((ROOT / 'content/profile.json').read_text())
 SITE = 'https://ruochendai-econ.github.io'
 
 
-def page(title, body, current, prefix=''):
+def page(title, body, current, prefix='', path='/'):
     navigation = []
     for label, path, key in [('Home', '', 'home'), ('Research', 'research/', 'research'),
                              ('CV (2025)', profile['cv'], 'cv')]:
@@ -22,7 +22,7 @@ def page(title, body, current, prefix=''):
         navigation.append(f'<a href="{prefix}{path or "./"}"{active}>{label}</a>')
     description = ('Ruochen Dai, economist at the Central University of Finance and Economics. '
                    'Research on entrepreneurship, firm dynamics, and development economics.')
-    url = SITE + ('/research/' if current == 'research' else '/')
+    url = SITE + path
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -58,7 +58,17 @@ def page(title, body, current, prefix=''):
 '''
 
 
-def paper_row(paper):
+def publication_details(paper):
+    details = paper.get('volume', '')
+    if paper.get('number'):
+        details += f'({paper["number"]})'
+    locator = paper.get('pages', '').replace('--', '–') or paper.get('article_number', '')
+    if locator:
+        details += (', ' if details else '') + locator
+    return details or paper.get('note', '')
+
+
+def paper_row(paper, prefix):
     chinese = paper['language'] == 'zh'
     coauthors = [name for name in paper['authors'] if name not in ('Ruochen Dai', '戴若尘')]
     if chinese:
@@ -70,11 +80,11 @@ def paper_row(paper):
     journal = ''
     if paper['journal']:
         journal = (f'<p class="journal"><em>{escape(paper["journal"])}</em>, '
-                   f'{paper["year"]}. {escape(paper["issue"])}.</p>')
-    links = [f'<a href="../{paper["pdf"]}">Paper</a>']
+                   f'{paper["year"]}. {escape(publication_details(paper))}.</p>')
+    links = [f'<a href="{prefix}{paper["pdf"]}">Paper</a>']
     if paper['doi']:
         links.append(f'<a href="https://doi.org/{escape(paper["doi"])}">Journal</a>')
-    links.append(f'<a href="../papers/{paper["id"]}.bib" download>BibTeX</a>')
+    links.append(f'<a href="{prefix}papers/{paper["id"]}.bib" download>BibTeX</a>')
     language = 'zh-CN' if chinese else 'en'
     abstract_label = '摘要' if chinese else 'Abstract'
     return f'''<article class="paper" id="{paper['id']}" lang="{language}">
@@ -84,7 +94,9 @@ def paper_row(paper):
         {journal}
         <p class="paper-links">{' <span aria-hidden="true">|</span> '.join(links)}</p>
       </div>
-      <p class="abstract"><strong>{abstract_label}:</strong> {escape(paper['abstract'])}</p>
+      <details class="paper-abstract"><summary>{abstract_label}</summary>
+        <p class="abstract">{escape(paper['abstract'])}</p>
+      </details>
     </article>'''
 
 
@@ -96,10 +108,12 @@ def write_bibtex(paper):
         fields['journal'] = paper['journal']
     if paper['doi']:
         fields['doi'] = paper['doi']
-    if paper['issue']:
-        fields['note'] = paper['issue']
-    if paper['status'] == 'working-paper':
-        fields['note'] = 'Working paper'
+    for key in ('volume', 'number', 'pages', 'note'):
+        if paper.get(key):
+            fields[key] = paper[key]
+    # Standard BibTeX styles print electronic article numbers from pages.
+    if paper.get('article_number'):
+        fields['pages'] = paper['article_number']
     fields['url'] = SITE + '/' + paper['pdf']
     kind = 'article' if paper['status'] == 'publication' else 'unpublished'
     # Escape TeX special characters without changing author order or title case.
@@ -117,35 +131,38 @@ for paper in papers:
     write_bibtex(paper)
 assert len({p['id'] for p in papers}) == len(papers)
 
-english = '\n'.join(paper_row(p) for p in papers if p['status'] == 'publication' and p['language'] == 'en')
-chinese = '\n'.join(paper_row(p) for p in papers if p['status'] == 'publication' and p['language'] == 'zh')
-working = '\n'.join(paper_row(p) for p in papers if p['status'] == 'working-paper')
-research = f'''<main id="main" class="research-page">
+categories = [
+    ('english', 'English Publications', 'research/', 'publication', 'en'),
+    ('chinese', '中文发表', 'research/chinese/', 'publication', 'zh'),
+    ('working', 'Working Papers', 'research/working-papers/', 'working-paper', 'en'),
+]
+for category, label, path, status, language in categories:
+    prefix = '../' * path.count('/')
+    selected = [p for p in papers if p['status'] == status and p['language'] == language]
+    navigation = []
+    for key, nav_label, nav_path, _, _ in categories:
+        active = ' aria-current="page"' if key == category else ''
+        navigation.append(f'<a href="{prefix}{nav_path}"{active}>{nav_label}</a>')
+    rows = '\n'.join(paper_row(p, prefix) for p in selected)
+    research = f'''<main id="main" class="research-page">
     <div class="page-heading"><h1>Research</h1>
-      <nav class="section-nav" aria-label="Research sections">
-        <a href="#publications">Publications</a>
-        <a href="#chinese-publications">中文论文</a>
-        <a href="#working-papers">Working Papers</a>
-      </nav>
+      <nav class="section-nav" aria-label="Research categories">{' '.join(navigation)}</nav>
     </div>
-    <section id="publications" aria-labelledby="publications-heading">
-      <h2 id="publications-heading">Publications</h2>
-      {english}
-      <div id="chinese-publications"><h2 class="subheading">Publications in Chinese <span lang="zh-CN">中文论文</span></h2>
-      {chinese}</div>
-    </section>
-    <section id="working-papers" aria-labelledby="working-heading">
-      <h2 id="working-heading">Working Papers</h2>
-      {working}
+    <section aria-labelledby="category-heading">
+      <h2 id="category-heading">{label}</h2>
+      {rows}
     </section>
     <p class="back-top"><a href="#main">Back to top ↑</a></p>
   </main>'''
+    destination = ROOT / path / 'index.html'
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(page(label, research, 'research', prefix, '/' + path))
 
 biography = '\n'.join('<p>' + escape(paragraph) + '</p>' for paragraph in profile['biography'])
 home = f'''<main id="main" class="home-page">
     <section class="profile" aria-labelledby="name">
       <div class="portrait-column">
-        <img class="portrait" src="assets/ruochen-dai.jpg" alt="Ruochen Dai by the waterfront" width="624" height="1258" fetchpriority="high">
+        <img class="portrait" src="assets/ruochen-dai.jpg" alt="Ruochen Dai punting on a river" width="768" height="1024" fetchpriority="high">
       </div>
       <div class="biography">
         <h1 id="name">Ruochen Dai <span lang="zh-CN">戴若尘</span></h1>
@@ -168,5 +185,4 @@ home = f'''<main id="main" class="home-page">
   </main>'''
 
 (ROOT / 'index.html').write_text(page('Home', home, 'home'))
-(ROOT / 'research/index.html').write_text(page('Research', research, 'research', '../'))
-print(f'Built Home and Research with {len(papers)} papers and BibTeX files.')
+print(f'Built Home and three research categories with {len(papers)} papers and BibTeX files.')
