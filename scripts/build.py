@@ -19,7 +19,8 @@ def page(title, body, current, prefix='', path='/'):
     for label, path, key in [('Home', '', 'home'), ('Research', 'research/', 'research'),
                              (profile['cv_label'], profile['cv'], 'cv')]:
         active = ' aria-current="page"' if key == current else ''
-        navigation.append(f'<a href="{prefix}{path or "./"}"{active}>{label}</a>')
+        label_html = '<em>' + escape(label) + '</em>' if key == 'cv' else escape(label)
+        navigation.append(f'<a href="{prefix}{path or "./"}"{active}>{label_html}</a>')
     description = ('Ruochen Dai, economist at the Central University of Finance and Economics. '
                    'Research on entrepreneurship, firm dynamics, and development economics.')
     url = SITE + path
@@ -195,7 +196,7 @@ home = f'''<main id="main" class="home-page">
         <p>I serve as Data Editor at <em>China Economic Review</em>.</p>
         <p class="contact"><a href="mailto:{profile['email']}">{profile['email']}</a></p>
         <p class="profile-links"><a href="research/">Research</a><span aria-hidden="true"> / </span>
-          <a href="{profile['cv']}">{escape(profile["cv_label"])} <span class="file-type">PDF</span></a><span aria-hidden="true"> / </span>
+          <a href="{profile['cv']}"><em>{escape(profile["cv_label"])}</em> <span class="file-type">PDF</span></a><span aria-hidden="true"> / </span>
           <a href="https://econ.cufe.edu.cn/info/1033/6641.htm">University profile</a></p>
       </div>
     </section>
