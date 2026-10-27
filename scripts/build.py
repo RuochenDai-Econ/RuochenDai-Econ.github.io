@@ -17,21 +17,34 @@ SITE = 'https://ruochendai-econ.github.io'
 def page(title, body, current, prefix='', path='/'):
     navigation = []
     for label, path, key in [('Home', '', 'home'), ('Research', 'research/', 'research'),
-                             ('CV (2025)', profile['cv'], 'cv')]:
+                             (profile['cv_label'], profile['cv'], 'cv')]:
         active = ' aria-current="page"' if key == current else ''
         navigation.append(f'<a href="{prefix}{path or "./"}"{active}>{label}</a>')
     description = ('Ruochen Dai, economist at the Central University of Finance and Economics. '
                    'Research on entrepreneurship, firm dynamics, and development economics.')
     url = SITE + path
+    document_title = ('Ruochen Dai 戴若尘 | Economist at CUFE' if current == 'home'
+                      else title + ' | Ruochen Dai')
+    person = {
+        '@context': 'https://schema.org', '@type': 'Person',
+        'name': 'Ruochen Dai', 'alternateName': '戴若尘', 'url': SITE + '/',
+        'jobTitle': profile['position'],
+        'affiliation': {'@type': 'CollegeOrUniversity',
+                        'name': 'Central University of Finance and Economics'},
+        'sameAs': ['https://econ.cufe.edu.cn/info/1033/6641.htm'],
+    }
+    structured_data = ('<script type="application/ld+json">' + json.dumps(person, ensure_ascii=False)
+                       + '</script>') if current == 'home' else ''
     return f'''<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{escape(title)} | Ruochen Dai</title>
+  <title>{escape(document_title)}</title>
   <meta name="description" content="{description}">
+{structured_data}
   <meta name="theme-color" content="#8c202a">
-  <meta property="og:title" content="{escape(title)} | Ruochen Dai">
+  <meta property="og:title" content="{escape(document_title)}">
   <meta property="og:description" content="{description}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{url}">
@@ -158,6 +171,15 @@ for category, label, path, status, language in categories:
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(page(label, research, 'research', prefix, '/' + path))
 
+grants = json.loads((ROOT / 'content/grants.json').read_text())
+grant_rows = []
+for grant in grants:
+    chinese_title = ('<p class="grant-chinese" lang="zh-CN">' + escape(grant['title_zh']) + '</p>') if grant['title_zh'] else ''
+    period = (' · ' + escape(grant['period'])) if grant['period'] else ''
+    grant_rows.append(f'<article class="grant"><h3>{escape(grant["title"])}</h3>{chinese_title}'
+                      f'<p>{escape(grant["funder"])} · {escape(grant["type"])}<br>'
+                      f'Grant No. {grant["number"]}{period}</p></article>')
+
 biography = '\n'.join('<p>' + escape(paragraph) + '</p>' for paragraph in profile['biography'])
 home = f'''<main id="main" class="home-page">
     <section class="profile" aria-labelledby="name">
@@ -173,7 +195,7 @@ home = f'''<main id="main" class="home-page">
         <p>I serve as Data Editor at <em>China Economic Review</em>.</p>
         <p class="contact"><a href="mailto:{profile['email']}">{profile['email']}</a></p>
         <p class="profile-links"><a href="research/">Research</a><span aria-hidden="true"> / </span>
-          <a href="{profile['cv']}">CV (2025) <span class="file-type">PDF</span></a><span aria-hidden="true"> / </span>
+          <a href="{profile['cv']}">{escape(profile["cv_label"])} <span class="file-type">PDF</span></a><span aria-hidden="true"> / </span>
           <a href="https://econ.cufe.edu.cn/info/1033/6641.htm">University profile</a></p>
       </div>
     </section>
@@ -181,6 +203,10 @@ home = f'''<main id="main" class="home-page">
       <div><h2 id="research-heading">Research</h2><p>Entrepreneurship · Firm dynamics · Development economics</p></div>
       <div class="research-intro"><p>My work examines how entrepreneurs create and grow firms, and how networks, institutions, and technology shape these decisions.</p>
         <a href="research/">Publications &amp; working papers →</a></div>
+    </section>
+    <section class="home-grants" aria-labelledby="grants-heading">
+      <h2 id="grants-heading">Research Grants</h2>
+      {''.join(grant_rows)}
     </section>
   </main>'''
 
