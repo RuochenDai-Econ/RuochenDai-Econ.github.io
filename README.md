@@ -67,6 +67,8 @@ BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为�
 
 网站允许搜索引擎抓取，四个页面在 `sitemap.xml` 中列出，页面有 canonical 地址。首页标题包含英文名、中文名、经济学家身份和 CUFE，并提供 Person 结构化信息。
 
-目前未在本任务中验证 Google Search Console 或提交收录请求。网站所有者可添加 URL-prefix 属性 `https://ruochendai-econ.github.io/`，完成 HTML 文件或 meta 标签验证后提交 `sitemap.xml`，并用 URL Inspection 请求首页收录。抓取与排名由 Google 决定，不能保证时点或名次。
+2026-11-03 已完成 Google Search Console 的 URL-prefix 属性验证，并提交首页编入索引请求；Google 确认首页已加入优先抓取队列。提交前的检查结果为“Google 无法识别此网址”，无历史抓取记录。站点地图已提交并重试一次，但当时仍显示“无法抓取”；公开 sitemap 返回 HTTP 200、XML 可正常解析，robots.txt 允许抓取，需后续在 Search Console 复查 Google 的读取结果。请求成功不等于已经收录，抓取与排名由 Google 决定，不能保证时点或名次。
+
+`google92727e976e64f264.html` 是网站所有权验证文件，应保持在网站根目录，以维持验证状态。
 
 发布前运行 `python3 scripts/check_search_metadata.py`，检查四个页面的 canonical 与 og:url 均指向本页，并与 sitemap 一致。2026-11-03 修复了导航循环覆盖页面路径、导致 canonical 拼接为无效域名的问题。
