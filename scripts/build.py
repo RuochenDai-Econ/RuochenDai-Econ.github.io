@@ -16,11 +16,11 @@ SITE = 'https://ruochendai-econ.github.io'
 
 def page(title, body, current, prefix='', path='/'):
     navigation = []
-    for label, path, key in [('Home', '', 'home'), ('Research', 'research/', 'research'),
+    for label, nav_path, key in [('Home', '', 'home'), ('Research', 'research/', 'research'),
                              (profile['cv_label'], profile['cv'], 'cv')]:
         active = ' aria-current="page"' if key == current else ''
         label_html = '<em>' + escape(label) + '</em>' if key == 'cv' else escape(label)
-        navigation.append(f'<a href="{prefix}{path or "./"}"{active}>{label_html}</a>')
+        navigation.append(f'<a href="{prefix}{nav_path or "./"}"{active}>{label_html}</a>')
     description = ('Ruochen Dai, economist at the Central University of Finance and Economics. '
                    'Research on entrepreneurship, firm dynamics, and development economics.')
     url = SITE + path
