@@ -18,8 +18,13 @@ def tex(text):
 def entry(paper):
     authors = ', '.join(r'\textbf{' + tex(name) + '}' if name in ('Ruochen Dai', '戴若尘')
                         else tex(name) for name in paper['authors'])
-    citation = authors + '. (' + str(paper['year']) + '). '
-    citation += r'\href{https://ruochendai-econ.github.io/' + paper['pdf'] + '}{' + tex(paper['title']) + '}. '
+    citation = authors + '. '
+    if paper.get('year'):
+        citation += '(' + str(paper['year']) + '). '
+    if paper.get('pdf'):
+        citation += r'\href{https://ruochendai-econ.github.io/' + paper['pdf'] + '}{' + tex(paper['title']) + '}. '
+    else:
+        citation += tex(paper['title']) + '. '
     if paper['journal']:
         citation += r'\emph{' + tex(paper['journal']) + '}'
         if paper.get('volume'):
@@ -32,6 +37,8 @@ def entry(paper):
         if paper.get('note'):
             citation += ', ' + paper['note'].lower()
         citation += '.'
+    if paper.get('review_status'):
+        citation += r'\emph{' + tex(paper['review_journal']) + '}, ' + tex(paper['review_status'].lower()) + '.'
     return r'\item ' + citation
 
 def section(title, status, language):
@@ -79,4 +86,4 @@ for _ in range(2):
 shutil.copyfile(build / 'main.pdf', ROOT / 'cv/ruochen-dai-cv.pdf')
 # Keep previously shared URLs working, with the same updated public content.
 shutil.copyfile(build / 'main.pdf', ROOT / 'cv/ruochen-dai-cv-2025.pdf')
-print('Built public CV from all 16 website entries.')
+print(f'Built public CV from all {len(papers)} website entries.')

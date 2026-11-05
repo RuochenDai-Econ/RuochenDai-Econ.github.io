@@ -53,9 +53,9 @@ python3 scripts/build.py
 
 ## 论文分类与引文
 
-Research 下的 English Publications、中文发表、Working Papers 分别显示 6、8、2 篇论文；摘要用原生 HTML details 默认收起，不依赖 JavaScript。
+Research 下的 English Publications、中文发表、Working Papers 分别显示 6、8、3 篇论文；摘要用原生 HTML details 默认收起，不依赖 JavaScript。
 
-BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为兼容传统 BibTeX 样式，Elsevier 文章编号也输出在 `pages` 中；`note` 只记录 Forthcoming / Working paper。没有正式卷期的论文不编造卷期。网页与 BibTeX 共用这些结构化字段。
+BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为兼容传统 BibTeX 样式，Elsevier 文章编号也输出在 `pages` 中；`note` 记录 Forthcoming、Working paper 或明确的审稿状态；R&R 和 conditional acceptance 的期刊不写入已发表文献的 `journal` 字段。没有正式卷期的论文不编造卷期。网页与 BibTeX 共用这些结构化字段。
 
 本轮核对以所提供 PDF 为基础，并补充 [JLEO 正式卷期 42(3):906–933](https://academic.oup.com/jleo/issue/42/3)、[AEJ 论文 DOI 与 forthcoming 状态](https://www.aeaweb.org/articles?id=10.1257/mac.20240030)、[经济管理学刊 3(2):55–82](https://ccj.pku.edu.cn/article/info?id=581530139787333)。
 
@@ -72,3 +72,5 @@ BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为�
 `google92727e976e64f264.html` 是网站所有权验证文件，应保持在网站根目录，以维持验证状态。
 
 发布前运行 `python3 scripts/check_search_metadata.py`，检查四个页面的 canonical 与 og:url 均指向本页，并与 sitemap 一致。2026-11-03 修复了导航循环覆盖页面路径、导致 canonical 拼接为无效域名的问题。
+
+2026-11-05 根据作者确认，Community Networks 标为 Journal of the European Economic Association 的 Revise and resubmit；新增 An Anatomy of Central State-Owned Enterprises in China（与 Loren Brandt、Xiaobo Zhang 合作），标为 Journal of Comparative Economics 的 Conditional acceptance。两篇保留在 Working Papers。网站和 CV 共 17 篇，仍有 16 个论文 PDF；新条目尚无提供的年份、PDF 或摘要，因此不生成这些信息和下载链接。

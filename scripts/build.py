@@ -95,12 +95,22 @@ def paper_row(paper, prefix):
     if paper['journal']:
         journal = (f'<p class="journal"><em>{escape(paper["journal"])}</em>, '
                    f'{paper["year"]}. {escape(publication_details(paper))}.</p>')
-    links = [f'<a href="{prefix}{paper["pdf"]}">Paper</a>']
+    if paper.get('review_status'):
+        journal = (f'<p class="journal"><em>{escape(paper["review_journal"])}</em>'
+                   f' — {escape(paper["review_status"])}.</p>')
+    links = []
+    if paper.get('pdf'):
+        links.append(f'<a href="{prefix}{paper["pdf"]}">Paper</a>')
     if paper['doi']:
         links.append(f'<a href="https://doi.org/{escape(paper["doi"])}">Journal</a>')
     links.append(f'<a href="{prefix}papers/{paper["id"]}.bib" download>BibTeX</a>')
     language = 'zh-CN' if chinese else 'en'
     abstract_label = '摘要' if chinese else 'Abstract'
+    abstract = ''
+    if paper.get('abstract'):
+        abstract = (f'      <details class="paper-abstract"><summary>{abstract_label}</summary>\n'
+                    f'        <p class="abstract">{escape(paper["abstract"])}</p>\n'
+                    '      </details>\n')
     return f'''<article class="paper" id="{paper['id']}" lang="{language}">
       <div class="paper-info">
         <h3>{escape(paper['title'])}</h3>
@@ -108,16 +118,14 @@ def paper_row(paper, prefix):
         {journal}
         <p class="paper-links">{' <span aria-hidden="true">|</span> '.join(links)}</p>
       </div>
-      <details class="paper-abstract"><summary>{abstract_label}</summary>
-        <p class="abstract">{escape(paper['abstract'])}</p>
-      </details>
-    </article>'''
+{abstract}    </article>'''
 
 
 def write_bibtex(paper):
     fields = {'title': '{' + paper['title'] + '}',
-              'author': ' and '.join('{' + a + '}' if paper['language'] == 'zh' else a for a in paper['authors']),
-              'year': str(paper['year'])}
+              'author': ' and '.join('{' + a + '}' if paper['language'] == 'zh' else a for a in paper['authors'])}
+    if paper.get('year'):
+        fields['year'] = str(paper['year'])
     if paper['journal']:
         fields['journal'] = paper['journal']
     if paper['doi']:
@@ -128,7 +136,10 @@ def write_bibtex(paper):
     # Standard BibTeX styles print electronic article numbers from pages.
     if paper.get('article_number'):
         fields['pages'] = paper['article_number']
-    fields['url'] = SITE + '/' + paper['pdf']
+    if paper.get('review_status'):
+        fields['note'] = paper['review_status'] + ', ' + paper['review_journal']
+    fields['url'] = (SITE + '/' + paper['pdf'] if paper.get('pdf') else
+                     SITE + '/research/working-papers/#' + paper['id'])
     kind = 'article' if paper['status'] == 'publication' else 'unpublished'
     # Escape TeX special characters without changing author order or title case.
     lines = [f'@{kind}{{{paper["id"]},']
@@ -141,7 +152,8 @@ def write_bibtex(paper):
 
 for paper in papers:
     assert paper['status'] in ('publication', 'working-paper')
-    assert (ROOT / paper['pdf']).is_file(), paper['pdf']
+    if paper.get('pdf'):
+        assert (ROOT / paper['pdf']).is_file(), paper['pdf']
     write_bibtex(paper)
 assert len({p['id'] for p in papers}) == len(papers)
 
