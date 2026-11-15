@@ -101,7 +101,11 @@
                 "zh": "需申请"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A nationally representative household survey conducted by Southwestern University of Finance and Economics. The linked study uses its individual-level information to estimate pension wealth and examine wealth distribution.",
+            "zh": "西南财经大学开展的全国性家庭调查。所列研究使用其中的个人层面信息估算养老金财富并考察财富分配。"
+          }
         },
         {
           "id": "households-2",
@@ -146,7 +150,11 @@
                 "zh": "需申请"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A longitudinal survey conducted by the Institute of Social Science Survey at Peking University, covering individuals and households. The linked studies use demographic, education, employment, pension participation and local-government attitude information.",
+            "zh": "北京大学中国社会科学调查中心开展的个人与家庭追踪调查。所列研究使用人口特征、教育、就业、养老保险参与及对地方政府态度等信息。"
+          }
         },
         {
           "id": "households-3",
@@ -167,7 +175,11 @@
                 "zh": "需申请"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A household survey conducted by the China Institute for Income Distribution at Beijing Normal University. The linked study uses its social pension participation information for comparison with other household surveys.",
+            "zh": "北京师范大学中国收入分配研究院开展的住户调查。所列研究使用其中的社会养老保险参与信息，与其他家庭调查进行比较。"
+          }
         },
         {
           "id": "crhps",
@@ -188,7 +200,11 @@
                 "zh": "需申请；远程使用"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A rural household and community survey provided through Zhejiang University's Chinese Family Database. It contains household socioeconomic information and village-level information on leadership, elections and governance.",
+            "zh": "由浙江大学中国家庭数据库提供的农村家庭与社区调查，包含家庭社会经济状况以及村庄领导、选举和治理等信息。"
+          }
         },
         {
           "id": "census",
@@ -221,7 +237,11 @@
                 "zh": "研究用整理表公开；部分原始表需申请"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Population census statistics compiled by China's National Bureau of Statistics. The linked studies use published tabulations of population, education, employment and other demographic characteristics, including detailed industry and occupation tables.",
+            "zh": "国家统计局编制的人口普查统计资料。所列研究使用人口、教育、就业等公开汇总资料，包括行业和职业的详细分类表。"
+          }
         },
         {
           "id": "ipums",
@@ -242,7 +262,11 @@
                 "zh": "需注册并申请"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Harmonized census microdata distributed by IPUMS International at the University of Minnesota. The China samples used here contain person-level demographic, industry, occupation and geographic information.",
+            "zh": "明尼苏达大学 IPUMS International 提供的标准化人口普查微观资料。所列研究使用的中国样本包含个人层面的人口特征、行业、职业及地理信息。"
+          }
         },
         {
           "id": "landscan",
@@ -263,7 +287,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A gridded population product from Oak Ridge National Laboratory. The linked study aggregates the population grids to city and county areas.",
+            "zh": "美国橡树岭国家实验室提供的栅格人口产品。所列研究将栅格人口汇总至城市和县域。"
+          }
         },
         {
           "id": "qschou",
@@ -284,7 +312,11 @@
                 "zh": "匿名数据公开；完整文本不公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "An author-collected source based on medical crowdfunding campaigns on Qschou. It covers campaign characteristics, fundraising outcomes and information derived from testimonials; the public documentation distinguishes released material from withheld identifiable text.",
+            "zh": "作者根据轻松筹医疗众筹项目整理，包含项目特征、筹款结果及从证言中提取的信息。公开说明区分了已发布材料与未公开的可识别身份文本。"
+          }
         },
         {
           "id": "qcew",
@@ -305,7 +337,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The US Bureau of Labor Statistics' Quarterly Census of Employment and Wages provides employment and wage statistics by geography and industry. The linked study uses county-industry employment information.",
+            "zh": "美国劳工统计局的就业与工资季度普查，提供分地区、分行业的就业和工资统计。所列研究使用县与行业层面的就业信息。"
+          }
         },
         {
           "id": "onet",
@@ -326,7 +362,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "An occupational information resource supported by the US Department of Labor. It describes work activities, work context and abilities, which the linked study uses to characterize occupational tasks.",
+            "zh": "美国劳工部支持的职业信息资源，描述工作活动、工作环境和能力要求；所列研究据此刻画职业任务特征。"
+          }
         }
       ]
     },
@@ -368,7 +408,11 @@
                 "zh": "不公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Firm-level industrial survey records from China's National Bureau of Statistics. The linked studies use information on industrial enterprises' production, finances and employment.",
+            "zh": "国家统计局的工业企业调查资料。所列研究使用工业企业的生产、财务及就业等信息。"
+          }
         },
         {
           "id": "firms-2",
@@ -389,7 +433,11 @@
                 "zh": "不公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A tax survey administered by China's Ministry of Finance and State Taxation Administration. The linked study uses enterprise financial and tax information to examine tax compliance.",
+            "zh": "财政部与国家税务总局组织的税收调查。所列研究使用企业财务及税收信息研究税收遵从。"
+          }
         },
         {
           "id": "firms-3",
@@ -434,7 +482,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Patent records originating from the China National Intellectual Property Administration, accessed through different compilations in the linked studies. They contain patent application and applicant information used to study innovation, collaboration and knowledge flows.",
+            "zh": "源自国家知识产权局、经不同渠道整理的专利记录，包含专利申请及申请人信息，用于研究创新、合作与知识流动。"
+          }
         },
         {
           "id": "firms-4",
@@ -455,7 +507,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Supplier-customer and patent-related panels supplied by the RStata Data Center. The linked study uses them to measure intercity production linkages and patent similarity.",
+            "zh": "RStata 数据中心提供的供应商—客户及专利相关面板资料。所列研究据此衡量城市之间的生产联系和专利相似性。"
+          }
         },
         {
           "id": "firms-5",
@@ -476,7 +532,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Patent-transfer records supplied by CNRDS. The linked study uses these records to construct measures of patent transfers between cities.",
+            "zh": "中国研究数据服务平台提供的专利转让记录。所列研究据此构建城市之间的专利转让指标。"
+          }
         },
         {
           "id": "registration",
@@ -497,7 +557,11 @@
                 "zh": "需授权"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Enterprise registration records from the National Enterprise Credit Information Publicity System, accessed through an authorized institutional source. The linked study uses registration and ownership information to identify foreign-invested enterprises.",
+            "zh": "源自国家企业信用信息公示系统、通过获授权的机构渠道取得的企业登记资料。所列研究使用注册及所有制信息识别外商投资企业。"
+          }
         },
         {
           "id": "ifr",
@@ -518,7 +582,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "World Robotics statistics from the International Federation of Robotics. The linked study uses industrial robot stocks by country and industry to measure robot exposure.",
+            "zh": "国际机器人联合会的 World Robotics 统计资料。所列研究使用分国家、分行业的工业机器人存量衡量机器人暴露程度。"
+          }
         }
       ]
     },
@@ -560,7 +628,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "CSMAR databases covering listed companies' financial statements and related corporate information. The linked studies use firm finances and registered capital, among other company characteristics.",
+            "zh": "国泰安提供的上市公司财务报表及相关企业信息数据库。所列研究使用公司财务、注册资本等企业特征。"
+          }
         },
         {
           "id": "finance-2",
@@ -581,7 +653,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Bank financial and profile information supplied by CSMAR. It includes balance-sheet and income-statement information used to construct bank-level financial indicators.",
+            "zh": "国泰安提供的银行财务与基本情况资料，包含资产负债表及利润表信息，用于构建银行层面的财务指标。"
+          }
         },
         {
           "id": "finance-3",
@@ -602,7 +678,11 @@
                 "zh": "不公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Supervisory records on rural commercial banks from China's former banking regulators, CBRC and CBIRC. They cover assets, lending, capital, ownership and operating indicators.",
+            "zh": "原中国银监会与中国银保监会的农村商业银行监管资料，涵盖资产、贷款、资本、所有权及经营指标。"
+          }
         },
         {
           "id": "finance-4",
@@ -623,7 +703,11 @@
                 "zh": "需授权"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Agricultural research databases provided by Zhejiang University's CARD and Qiyan. The linked study uses prefecture-level counts of family farms, farmers' professional cooperatives and agricultural enterprises.",
+            "zh": "浙江大学卡特与企研提供的涉农研究数据库。所列研究使用地级市层面的家庭农场、农民专业合作社及农业企业数量信息。"
+          }
         },
         {
           "id": "insurance",
@@ -644,7 +728,11 @@
                 "zh": "汇总数据公开；微观数据不公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Policy and claims records supplied by an unnamed life insurer. The linked study uses insurance purchasing, coverage and claims information; the insurer's identity is not disclosed in the public README.",
+            "zh": "由一家未具名寿险公司提供的保单与理赔记录。所列研究使用保险购买、保障及理赔信息；公开 README 未披露公司名称。"
+          }
         },
         {
           "id": "csmar-regional",
@@ -665,7 +753,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Regional economic and financial statistics distributed by CSMAR. The linked study uses city-level bank loan and deposit balances.",
+            "zh": "国泰安提供的区域经济与金融统计资料。所列研究使用城市层面的银行贷款及存款余额。"
+          }
         }
       ]
     },
@@ -707,7 +799,11 @@
                 "zh": "机构订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Import and export records originating from the General Administration of Customs of China. They describe firms' trade by product and trading partner, with access channels differing across the linked studies.",
+            "zh": "源自中国海关总署的进出口记录，包含企业分产品、分贸易伙伴的贸易信息；所列研究的获取渠道有所不同。"
+          }
         },
         {
           "id": "trade-2",
@@ -728,7 +824,11 @@
                 "zh": "公开／需注册"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Product-level tariff schedules from UNCTAD TRAINS, accessed through World Bank trade-data services. The linked study uses most-favoured-nation tariffs for China and foreign markets.",
+            "zh": "联合国贸发会议 TRAINS 的产品层面关税资料，通过世界银行贸易数据服务获取。所列研究使用中国及国外市场的最惠国关税。"
+          }
         },
         {
           "id": "trade-3",
@@ -749,7 +849,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Air-route information compiled from the Civil Aviation Administration of China's statistical yearbooks and official route announcements. The linked study uses flight segments to identify air connections between cities.",
+            "zh": "根据中国民用航空局统计年鉴及官方航线公告整理的航线信息。所列研究使用航段资料识别城市之间的航空联系。"
+          }
         },
         {
           "id": "baci",
@@ -770,7 +874,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "CEPII's product-level bilateral trade database. It provides trade flows between countries classified by product.",
+            "zh": "法国国际经济研究中心的产品层面双边贸易数据库，提供按产品分类的国家间贸易流量信息。"
+          }
         }
       ]
     },
@@ -800,7 +908,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Historical daily weather information published on tianqi.com. The source used here reports maximum and minimum temperature, weather descriptions and wind, supporting the study's extreme-temperature measures.",
+            "zh": "天气网发布的历史逐日天气信息。所用来源记录最高和最低气温、天气状况及风况，用于构建极端温度指标。"
+          }
         },
         {
           "id": "climate-2",
@@ -821,7 +933,11 @@
                 "zh": "需注册"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The international disaster database maintained by CRED at UCLouvain. Its country profiles report disaster occurrences and impacts; the linked study uses information on natural disasters and economic damage.",
+            "zh": "比利时鲁汶大学灾害流行病学研究中心维护的国际灾害数据库。其国家概况资料记录灾害发生及影响，所列研究使用自然灾害及经济损失信息。"
+          }
         },
         {
           "id": "climate-3",
@@ -842,7 +958,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "An official climate bulletin published by the China Meteorological Administration. The linked study draws on its reported flood-related economic losses.",
+            "zh": "中国气象局发布的官方气候公报。所列研究使用其中公布的洪涝灾害经济损失信息。"
+          }
         },
         {
           "id": "climate-4",
@@ -863,7 +983,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "National GDP statistics published by China's National Bureau of Statistics. The linked study uses GDP to express disaster-related economic losses relative to the size of the economy.",
+            "zh": "国家统计局公布的全国国内生产总值统计。所列研究以 GDP 衡量灾害经济损失相对于经济规模的大小。"
+          }
         },
         {
           "id": "climate-5",
@@ -884,7 +1008,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Chinese macroeconomic series distributed through EPS China Data. The linked study uses exchange-rate and national patent series sourced from official Chinese statistics.",
+            "zh": "EPS 中国数据提供的中国宏观经济序列。所列研究使用源自中国官方统计的汇率及全国专利序列。"
+          }
         },
         {
           "id": "imf-exchange",
@@ -905,7 +1033,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Exchange-rate series from the International Monetary Fund. The linked study uses monthly currency rates against the US dollar to construct bilateral exchange rates against the renminbi.",
+            "zh": "国际货币基金组织的汇率序列。所列研究使用各币种对美元的月度汇率，构建其对人民币的双边汇率。"
+          }
         },
         {
           "id": "wdi",
@@ -938,7 +1070,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The World Bank's World Development Indicators brings together country-level development statistics. The linked studies use land area, GDP and consumer price information.",
+            "zh": "世界银行世界发展指标汇集国家层面的发展统计。所列研究使用国土面积、GDP 及消费价格信息。"
+          }
         },
         {
           "id": "ceic",
@@ -971,7 +1107,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Economic time series distributed by CEIC. The linked studies use Chinese regional indicators such as GDP, industrial structure, government expenditure and trade.",
+            "zh": "CEIC 提供的经济时间序列。所列研究使用中国地区 GDP、产业结构、财政支出及贸易等指标。"
+          }
         },
         {
           "id": "city-yearbooks",
@@ -1028,7 +1168,11 @@
                 "zh": "已出版统计表／图书馆获取"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Statistical yearbooks issued by national and local statistical authorities. They report city, county or provincial economic and social indicators, including population, output, public finances and employment.",
+            "zh": "国家及地方统计部门出版的统计年鉴，提供城市、县域或省级经济社会指标，包括人口、产出、财政及就业等信息。"
+          }
         },
         {
           "id": "china-yearbook",
@@ -1049,7 +1193,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The China Statistical Yearbook is published by the National Bureau of Statistics. The linked study uses information on government employment and rural household income, including transfer income.",
+            "zh": "国家统计局出版的《中国统计年鉴》。所列研究使用政府就业及农村家庭收入资料，包括转移性收入。"
+          }
         },
         {
           "id": "nbs-io",
@@ -1070,7 +1218,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Input-output tables published by China's National Bureau of Statistics. They record flows across industries and final uses, including fixed capital formation.",
+            "zh": "国家统计局发布的投入产出表，记录行业之间的流量及最终使用，包括固定资本形成。"
+          }
         },
         {
           "id": "ruciod",
@@ -1091,7 +1243,11 @@
                 "zh": "所用版本需申请"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "A time-series input-output database from Renmin University of China's School of Applied Economics. The linked study uses its industry tables to construct ICT capital measures.",
+            "zh": "中国人民大学应用经济学院提供的时间序列投入产出数据库。所列研究使用其中的行业表构建信息通信技术资本指标。"
+          }
         },
         {
           "id": "euklems",
@@ -1112,7 +1268,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Industry-level productivity and capital statistics from EUKLEMS & INTANProd. The linked study uses US industry ICT capital series.",
+            "zh": "EUKLEMS & INTANProd 提供的行业生产率及资本统计资料。所列研究使用美国各行业的信息通信技术资本序列。"
+          }
         },
         {
           "id": "bis",
@@ -1133,7 +1293,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Bilateral exchange-rate series published by the Bank for International Settlements. The linked study uses them to convert trade values from US dollars to renminbi.",
+            "zh": "国际清算银行发布的双边汇率序列。所列研究用其将以美元计价的贸易额换算为人民币。"
+          }
         },
         {
           "id": "gpr",
@@ -1154,7 +1318,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Geopolitical risk indices developed by Dario Caldara and Matteo Iacoviello. The linked study draws on the authors' published GPR series.",
+            "zh": "Dario Caldara 与 Matteo Iacoviello 编制的地缘政治风险指数。所列研究使用两位作者公开发布的 GPR 序列。"
+          }
         },
         {
           "id": "pwt",
@@ -1175,7 +1343,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Penn World Table provides internationally comparable national economic accounts. The linked study uses information on output, population, capital and human capital.",
+            "zh": "宾大世界表提供可进行跨国比较的国民经济核算资料。所列研究使用产出、人口、资本及人力资本信息。"
+          }
         },
         {
           "id": "ewn",
@@ -1196,7 +1368,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The External Wealth of Nations database compiled by Philip Lane and Gian Maria Milesi-Ferretti reports countries' external financial positions. The linked study uses total external assets.",
+            "zh": "Philip Lane 与 Gian Maria Milesi-Ferretti 编制的 External Wealth of Nations 数据库，记录各国对外金融头寸。所列研究使用对外资产总额。"
+          }
         },
         {
           "id": "ict-capital",
@@ -1217,7 +1393,11 @@
                 "zh": "复现包提供所用序列"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Industry ICT capital estimates constructed by Liu and Li. The linked study uses these published estimates as an alternative measure of ICT capital.",
+            "zh": "Liu 与 Li 构建的行业信息通信技术资本估计。所列研究将其已公开的估计结果作为 ICT 资本的替代衡量指标。"
+          }
         },
         {
           "id": "ict-price",
@@ -1238,7 +1418,11 @@
                 "zh": "原始统计公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "An ICT price index compiled by the authors from National Bureau of Statistics price statistics. It is used as a deflator in the study's ICT capital construction.",
+            "zh": "作者根据国家统计局价格统计整理的信息通信技术价格指数，用于研究中 ICT 资本构建的价格平减。"
+          }
         }
       ]
     },
@@ -1268,7 +1452,11 @@
                 "zh": "公开查询界面／账号访问"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Baidu's search-interest service reports search intensity for selected keywords across regions. The linked study uses searches related to insurance.",
+            "zh": "百度提供的关键词搜索热度服务，记录不同地区的搜索强度。所列研究使用保险相关关键词的搜索信息。"
+          }
         },
         {
           "id": "baidu-poi",
@@ -1289,7 +1477,11 @@
                 "zh": "按平台规则使用API"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Points of interest obtained through Baidu Maps. The linked study uses insurance-company locations to measure the local presence of insurance branches.",
+            "zh": "通过百度地图取得的兴趣点资料。所列研究使用保险机构位置衡量当地保险分支机构的分布。"
+          }
         },
         {
           "id": "civil-affairs",
@@ -1310,7 +1502,11 @@
                 "zh": "购买／图书馆获取"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The China Civil Affairs Statistical Yearbook is issued by the Ministry of Civil Affairs. It provides information on village and residents' committees, elections and local governance.",
+            "zh": "民政部出版的《中国民政统计年鉴》，提供村民委员会、居民委员会、选举及基层治理等信息。"
+          }
         },
         {
           "id": "procuratorial",
@@ -1331,7 +1527,11 @@
                 "zh": "购买／图书馆获取"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Procuratorial yearbooks and provincial procuratorate reports document the work of China's procuratorial authorities. The linked study uses counts of officials investigated for corruption.",
+            "zh": "检察年鉴及省级检察机关报告记录中国检察机关的工作。所列研究使用被调查腐败官员的数量信息。"
+          }
         },
         {
           "id": "tianditu",
@@ -1352,7 +1552,11 @@
                 "zh": "需注册"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "An official national geographic information platform. The linked study uses provincial administrative boundaries and geographic coordinates obtained through Tianditu.",
+            "zh": "国家地理信息公共服务平台。所列研究使用通过天地图获取的省级行政边界及地理坐标。"
+          }
         },
         {
           "id": "jinshi",
@@ -1373,7 +1577,11 @@
                 "zh": "需订阅"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "The Ming-Qing Jinshi module of CNRDS's Confucian Culture Database records historical imperial examination graduates. The linked study uses prefecture-level Jinshi counts.",
+            "zh": "中国研究数据服务平台儒家文化数据库的明清进士模块，记录历史科举进士信息。所列研究使用地级市层面的进士数量。"
+          }
         },
         {
           "id": "ftz",
@@ -1394,7 +1602,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Policy information compiled from State Council free-trade-zone approvals and official foreign-investment catalogues. It identifies approved zones and encouraged investment activities.",
+            "zh": "根据国务院自由贸易试验区批复及官方外商投资目录整理的政策信息，用于识别获批区域及鼓励投资的活动。"
+          }
         },
         {
           "id": "treaty-ports",
@@ -1415,7 +1627,11 @@
                 "zh": "复现包公开整理表"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Historical treaty-port information drawn from the statistical compilation by Yan Zhongping and coauthors. It records port names, opening dates and provincial locations.",
+            "zh": "根据严中平等编制的历史统计资料整理的通商口岸信息，包括口岸名称、开埠日期及所在省份。"
+          }
         },
         {
           "id": "amap",
@@ -1436,7 +1652,11 @@
                 "zh": "按平台规则使用API"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Geocoding information from Amap's mapping service. The linked study converts province, city and county names into geographic coordinates.",
+            "zh": "高德地图服务提供的地理编码信息。所列研究将省、市、县名称转换为地理坐标。"
+          }
         },
         {
           "id": "china-shapefiles",
@@ -1457,7 +1677,11 @@
                 "zh": "公开"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "Chinese administrative boundary shapefiles distributed by GaryBikini through Zenodo. The linked study uses these geographic boundaries for mapping and spatial analysis.",
+            "zh": "GaryBikini 通过 Zenodo 发布的中国行政区划边界文件。所列研究使用这些边界进行制图及空间分析。"
+          }
         },
         {
           "id": "covid",
@@ -1478,7 +1702,11 @@
                 "zh": "公开通报"
               }
             }
-          ]
+          ],
+          "description": {
+            "en": "City-level COVID-19 case information compiled by the authors from municipal and provincial health commission announcements. It records reported daily new cases.",
+            "zh": "作者根据市级及省级卫生健康委员会公告整理的城市新冠病例信息，记录每日报告的新增病例。"
+          }
         }
       ]
     }

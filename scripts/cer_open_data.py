@@ -39,7 +39,11 @@ def render_index(catalog):
                 ref = references[paper]
                 cells = ''
                 if index == 0:
-                    cells += f'<th scope="rowgroup" rowspan="{len(uses)}">' + bilingual(dataset['name']) + '</th>'
+                    description = dataset['description']
+                    cells += f'<th scope="rowgroup" rowspan="{len(uses)}"><details class="dataset-details"><summary>'
+                    cells += bilingual(dataset['name']) + '</summary><div class="dataset-description"><p>'
+                    cells += escape(description['en']) + '</p><p class="zh" lang="zh-CN">'
+                    cells += escape(description['zh']) + '</p></div></details></th>'
                 if not shared_source or index == 0:
                     span = f' rowspan="{len(uses)}"' if shared_source else ''
                     cells += '<td' + span + '>' + source_link(row['source']) + '</td>'
@@ -61,6 +65,8 @@ def render_index(catalog):
     note = {'en': 'Access describes the source versions used in the studies. A public replication package may rely on restricted inputs. This site hosts descriptions and links only, not research data.',
             'zh': '开放情况指论文所用来源的获取条件；公开复现包仍可能使用受限原始数据。本站仅提供说明与链接，不存储研究数据。'}
     return ('<main id="main" class="cer-page"><div class="page-heading"><h1>CER Open Data</h1><p>'
-            + bilingual(intro) + '</p><nav class="category-nav" aria-label="Data categories">' + navigation
+            + bilingual(intro) + '</p><p class="expand-hint">'
+            + bilingual({'en': 'Select a dataset name to read a brief description.', 'zh': '点击数据名称展开简介。'})
+            + '</p><nav class="category-nav" aria-label="Data categories">' + navigation
             + '</nav></div>' + ''.join(sections) + '<div class="index-note"><p>' + bilingual(note)
             + '</p><p>Updated ' + escape(catalog['updated']) + '</p></div></main>')
