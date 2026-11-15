@@ -81,3 +81,11 @@ BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为�
 `cer-open-data/` lists selected sources used by CER studies. It contains English names with Chinese supporting labels, source and access information, and paired article and Dataverse DOIs. Common datasets are grouped; study-specific distributors and access conditions remain separate when they differ.
 
 Edit `content/cer_open_data.json` (index descriptions and bibliographic metadata only) and run `python3 scripts/build.py`, then `python3 scripts/check_search_metadata.py`. `scripts/cer_open_data.py` renders the table and `assets/cer-open-data.css` supplies its scoped styling. Do not add research data, author archives, internal review records or detailed sample attachments.
+
+### Publication boundary
+
+CER Open Data publishes index descriptions and DOI/source links only. No research data may be uploaded to this homepage, including public, private, raw, cleaned, anonymized, aggregated or sample data. Materials privately sent by authors to the editor must never be uploaded or reproduced in webpage content.
+
+Brief descriptions may summarize publicly released READMEs or official public documentation: who produced or provides a dataset and what information it contains. They must not reveal details known only from private materials. Do not upload original author documentation, research programs, archives, correspondence, logs, internal reviews, data screenshots or sample-count attachments.
+
+Website code and descriptive index metadata may be maintained, with no embedded research records. Review an explicit changed-file allowlist before each publication and verify the actual remote commit afterwards. See [AGENTS.md](AGENTS.md) for the persistent publication rules.
