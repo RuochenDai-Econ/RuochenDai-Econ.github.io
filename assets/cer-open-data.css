@@ -1,0 +1,40 @@
+.cer-page { max-width: 1320px; margin: auto; padding: 0 28px 35px; }
+.cer-page .page-heading { border-bottom: 2px solid var(--accent); padding-bottom: 25px; }
+.cer-page .page-heading h1 { font-size: 34px; margin-bottom: 16px; }
+.cer-page p { color: var(--muted); margin: 10px 0; }
+.cer-page .category-nav { display: flex; flex-wrap: wrap; gap: 12px 25px; margin-top: 25px; }
+.cer-page .category-nav a { text-decoration: none; }
+.cer-page section { margin: 35px 0; scroll-margin-top: 24px; }
+.cer-page h2 { font-size: 22px; font-weight: 500; margin: 0 0 15px; }
+.cer-page .table-wrap { overflow-x: auto; }
+.cer-page table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 14px; }
+.cer-page th, .cer-page td { text-align: left; vertical-align: top; padding: 13px 15px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.cer-page thead th { background: #f6f3f2; color: #514644; font-weight: 500; }
+.cer-page thead th:nth-child(1) { width: 24%; }
+.cer-page thead th:nth-child(2) { width: 22%; }
+.cer-page thead th:nth-child(3) { width: 14%; }
+.cer-page thead th:nth-child(4) { width: 23%; }
+.cer-page thead th:nth-child(5) { width: 17%; }
+.cer-page tbody th { font-weight: 500; }
+.cer-page .dataset + .dataset { border-top: 1px solid #d9ceca; }
+.cer-page .zh { display: block; margin-top: 4px; font-size: 12px; font-weight: 400; color: var(--muted); line-height: 1.5; }
+.cer-page h2 .zh { display: inline; margin-left: 12px; font-size: 14px; }
+.cer-page .category-nav .zh { font-size: 11px; }
+.cer-page .citation { display: block; margin-bottom: 5px; font-size: 12px; color: var(--muted); }
+.cer-page .doi { font-size: 13px; font-variant-numeric: tabular-nums; }
+.cer-page .index-note { border-top: 1px solid var(--line); padding-top: 15px; font-size: 12px; }
+@media (max-width: 1000px) { .cer-page table { min-width: 1000px; } }
+@media (max-width: 680px) {
+  .cer-page { padding: 0 16px 28px; }
+  .cer-page .page-heading h1 { font-size: 28px; }
+  .cer-page th, .cer-page td { padding: 10px 12px; }
+  .cer-page .category-nav { gap: 12px 18px; }
+}
+@media print {
+  .cer-page { max-width: none; padding: 0; }
+  .cer-page .category-nav { display: none; }
+  .cer-page table { font-size: 10px; min-width: 0; }
+  .cer-page th, .cer-page td { padding: 7px; }
+  .cer-page .doi, .cer-page .zh { font-size: 9px; }
+  .cer-page tr { break-inside: avoid; }
+}

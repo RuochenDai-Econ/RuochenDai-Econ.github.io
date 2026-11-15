@@ -1,0 +1,1486 @@
+{
+  "updated": "15 November 2026",
+  "references": {
+    "P1": {
+      "article_doi": "10.1016/j.chieco.2026.102774",
+      "dataverse_doi": "10.7910/DVN/FMCBOW",
+      "title": "The wings of innovation: Direct air connectivity boosts intercity collaborative patenting in China",
+      "citation": "Zuo & Chen (2026)"
+    },
+    "P2": {
+      "article_doi": "10.1016/j.chieco.2026.102776",
+      "dataverse_doi": "10.7910/DVN/DVXGRC",
+      "title": "Land collateralization without capitalization: The missing De Soto effect in China's agricultural land mortgage reform",
+      "citation": "Wang et al. (2026)"
+    },
+    "P3": {
+      "article_doi": "10.1016/j.chieco.2026.102771",
+      "dataverse_doi": "10.7910/DVN/RSDOQK",
+      "title": "Expanding the wealth concept: How pension wealth shapes wealth inequality in China",
+      "citation": "Li et al. (2026)"
+    },
+    "P4": {
+      "article_doi": "10.1016/j.chieco.2026.102781",
+      "dataverse_doi": "10.7910/DVN/MTMUOI",
+      "title": "Navigating climate shocks: The macroeconomic and financial stabilizing role of government-led resilience investments",
+      "citation": "Xu & Yin (2026)"
+    },
+    "P5": {
+      "article_doi": "10.1016/j.chieco.2026.102790",
+      "dataverse_doi": "10.7910/DVN/1WIFWE",
+      "title": "Capital goods trade liberalization and firm innovation: Evidence from China",
+      "citation": "Liu et al. (2026)"
+    },
+    "P6": {
+      "article_doi": "10.1016/j.chieco.2026.102782",
+      "dataverse_doi": "10.7910/DVN/R3H0AT",
+      "title": "International anti-tax avoidance, tax fairness and domestic tax compliance",
+      "citation": "Yang & Tang (2026)"
+    },
+    "P7": {
+      "article_doi": "10.1016/j.chieco.2026.102775",
+      "dataverse_doi": "10.7910/DVN/0V0ORJ",
+      "title": "Does the mobile application sales channel strengthen insurance inclusion? Evidence from critical illness insurance",
+      "citation": "Xu & Xu (2026)"
+    },
+    "P8": {
+      "article_doi": "10.1016/j.chieco.2026.102770",
+      "dataverse_doi": "10.7910/DVN/DHZ0F9",
+      "title": "From two heads to one: Electoral and governance consequences of political recentralization",
+      "citation": "Marie et al. (2026)"
+    },
+    "P9": {
+      "article_doi": "10.1016/j.chieco.2026.102793",
+      "dataverse_doi": "10.7910/DVN/MTF8BY",
+      "title": "Exchange rate exposure and global sourcing reconfiguration",
+      "citation": "Xia et al. (2026)"
+    },
+    "P10": {
+      "article_doi": "10.1016/j.chieco.2026.102791",
+      "dataverse_doi": "10.7910/DVN/P72EGX",
+      "title": "The power of certainty: how national treatment is reshaping FDI in China",
+      "citation": "Z. Wu et al. (2026)"
+    },
+    "P11": {
+      "article_doi": "10.1016/j.chieco.2026.102779",
+      "dataverse_doi": "10.7910/DVN/R5YMWV",
+      "title": "Beyond the patient's story: Relational testimonies and medical crowdfunding outcomes in China",
+      "citation": "A. Wu et al. (2026)"
+    },
+    "P12": {
+      "article_doi": "10.1016/j.chieco.2026.102780",
+      "dataverse_doi": "10.7910/DVN/JQZWKB",
+      "title": "The employment effects of ICT investment: evidence from China",
+      "citation": "He et al. (2026)"
+    }
+  },
+  "categories": [
+    {
+      "id": "households",
+      "title": {
+        "en": "Households & Population",
+        "zh": "家庭与人口"
+      },
+      "datasets": [
+        {
+          "id": "households-1",
+          "name": {
+            "en": "China Household Finance Survey (CHFS)",
+            "zh": "中国家庭金融调查"
+          },
+          "uses": [
+            {
+              "paper": "P3",
+              "source": {
+                "en": "Survey and Research Center for China Household Finance, SWUFE",
+                "zh": "西南财经大学中国家庭金融调查与研究中心",
+                "url": "https://chfs.swufe.edu.cn/"
+              },
+              "access": {
+                "en": "Application required",
+                "zh": "需申请"
+              }
+            }
+          ]
+        },
+        {
+          "id": "households-2",
+          "name": {
+            "en": "China Family Panel Studies (CFPS)",
+            "zh": "中国家庭追踪调查"
+          },
+          "uses": [
+            {
+              "paper": "P3",
+              "source": {
+                "en": "Institute of Social Science Survey, Peking University",
+                "zh": "北京大学中国社会科学调查中心",
+                "url": "https://www.isss.pku.edu.cn/cfps/"
+              },
+              "access": {
+                "en": "Application required",
+                "zh": "需申请"
+              }
+            },
+            {
+              "paper": "P8",
+              "source": {
+                "en": "Institute of Social Science Survey, Peking University",
+                "zh": "北京大学中国社会科学调查中心",
+                "url": "https://www.isss.pku.edu.cn/cfps/"
+              },
+              "access": {
+                "en": "Application required",
+                "zh": "需申请"
+              }
+            },
+            {
+              "paper": "P12",
+              "source": {
+                "en": "Institute of Social Science Survey, Peking University",
+                "zh": "北京大学中国社会科学调查中心",
+                "url": "https://www.isss.pku.edu.cn/cfps/"
+              },
+              "access": {
+                "en": "Application required",
+                "zh": "需申请"
+              }
+            }
+          ]
+        },
+        {
+          "id": "households-3",
+          "name": {
+            "en": "China Household Income Project (CHIP)",
+            "zh": "中国家庭收入调查"
+          },
+          "uses": [
+            {
+              "paper": "P3",
+              "source": {
+                "en": "China Institute for Income Distribution, Beijing Normal University",
+                "zh": "北京师范大学中国收入分配研究院",
+                "url": "http://chip.bnu.edu.cn"
+              },
+              "access": {
+                "en": "Application required",
+                "zh": "需申请"
+              }
+            }
+          ]
+        },
+        {
+          "id": "crhps",
+          "name": {
+            "en": "China Rural Household Panel Survey (CRHPS)",
+            "zh": "中国农村家庭追踪调查"
+          },
+          "uses": [
+            {
+              "paper": "P8",
+              "source": {
+                "en": "Chinese Family Database, Zhejiang University",
+                "zh": "浙江大学中国家庭大数据库",
+                "url": "https://ssec.zju.edu.cn/2020/0424/c86173a3031114/page.htm"
+              },
+              "access": {
+                "en": "Application; remote access",
+                "zh": "需申请；远程使用"
+              }
+            }
+          ]
+        },
+        {
+          "id": "census",
+          "name": {
+            "en": "China Population Census Tabulations",
+            "zh": "中国人口普查汇总资料"
+          },
+          "uses": [
+            {
+              "paper": "P3",
+              "source": {
+                "en": "National Bureau of Statistics; provincial statistics bureaus",
+                "zh": "国家统计局及各省统计局",
+                "url": "https://www.stats.gov.cn/sj/pcsj/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            },
+            {
+              "paper": "P12",
+              "source": {
+                "en": "National Bureau of Statistics; provincial statistics bureaus",
+                "zh": "国家统计局及各省统计局",
+                "url": "https://www.stats.gov.cn/sj/pcsj/"
+              },
+              "access": {
+                "en": "Public study extracts; some originals by application",
+                "zh": "研究用整理表公开；部分原始表需申请"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ipums",
+          "name": {
+            "en": "IPUMS International — China Census Samples",
+            "zh": "IPUMS中国人口普查微观样本"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "IPUMS International, University of Minnesota",
+                "zh": "明尼苏达大学IPUMS International",
+                "url": "https://international.ipums.org/"
+              },
+              "access": {
+                "en": "Registration and application",
+                "zh": "需注册并申请"
+              }
+            }
+          ]
+        },
+        {
+          "id": "landscan",
+          "name": {
+            "en": "LandScan Global Population Data",
+            "zh": "LandScan全球人口栅格数据"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Oak Ridge National Laboratory",
+                "zh": "美国橡树岭国家实验室",
+                "url": "https://landscan.ornl.gov/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "qschou",
+          "name": {
+            "en": "Qschou Medical Crowdfunding Data",
+            "zh": "轻松筹医疗众筹数据"
+          },
+          "uses": [
+            {
+              "paper": "P11",
+              "source": {
+                "en": "Qschou; author-collected campaign pages",
+                "zh": "轻松筹；作者采集的众筹页面",
+                "url": "https://www.qschou.com/"
+              },
+              "access": {
+                "en": "Public anonymized data; full text withheld",
+                "zh": "匿名数据公开；完整文本不公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "qcew",
+          "name": {
+            "en": "Quarterly Census of Employment and Wages (QCEW)",
+            "zh": "美国就业与工资季度普查"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "U.S. Bureau of Labor Statistics",
+                "zh": "美国劳工统计局",
+                "url": "https://www.bls.gov/cew/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "onet",
+          "name": {
+            "en": "O*NET Occupational Information",
+            "zh": "O*NET职业信息数据库"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "U.S. Department of Labor / O*NET Resource Center",
+                "zh": "美国劳工部／O*NET资源中心",
+                "url": "https://www.onetcenter.org/database.html"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "firms",
+      "title": {
+        "en": "Firms & Innovation",
+        "zh": "企业与创新"
+      },
+      "datasets": [
+        {
+          "id": "firms-1",
+          "name": {
+            "en": "Annual Survey of Industrial Firms (ASIF)",
+            "zh": "中国工业企业数据库"
+          },
+          "uses": [
+            {
+              "paper": "P5",
+              "source": {
+                "en": "National Bureau of Statistics; institution-held versions",
+                "zh": "国家统计局；论文使用机构持有版本",
+                "url": null
+              },
+              "access": {
+                "en": "Not public",
+                "zh": "不公开"
+              }
+            },
+            {
+              "paper": "P6",
+              "source": {
+                "en": "National Bureau of Statistics; institution-held versions",
+                "zh": "国家统计局；论文使用机构持有版本",
+                "url": null
+              },
+              "access": {
+                "en": "Not public",
+                "zh": "不公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "firms-2",
+          "name": {
+            "en": "National Tax Survey (NTS)",
+            "zh": "全国税收调查"
+          },
+          "uses": [
+            {
+              "paper": "P6",
+              "source": {
+                "en": "Ministry of Finance; State Taxation Administration",
+                "zh": "财政部、国家税务总局",
+                "url": null
+              },
+              "access": {
+                "en": "Not public",
+                "zh": "不公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "firms-3",
+          "name": {
+            "en": "Chinese Patent Data",
+            "zh": "中国专利数据"
+          },
+          "uses": [
+            {
+              "paper": "P1",
+              "source": {
+                "en": "China National Intellectual Property Administration",
+                "zh": "国家知识产权局",
+                "url": "https://www.cnipa.gov.cn/"
+              },
+              "access": {
+                "en": "Public source; partial study extract",
+                "zh": "原始信息公开；包内仅部分摘录"
+              }
+            },
+            {
+              "paper": "P5",
+              "source": {
+                "en": "School of Economics Data Center, Fudan University; Chinese patent records",
+                "zh": "复旦大学经济学院数据中心持有的中国专利记录",
+                "url": null
+              },
+              "access": {
+                "en": "Restricted institutional version",
+                "zh": "机构持有受限版本"
+              }
+            },
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Li & Shi, Chinese patent in Google patent public data",
+                "zh": "Li与Shi整理：Google专利公开数据中的中国专利",
+                "url": "https://doi.org/10.7910/DVN/ZVTIP1"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "firms-4",
+          "name": {
+            "en": "RStata Supply Chain and Patent Data",
+            "zh": "上市公司供应链与专利数据"
+          },
+          "uses": [
+            {
+              "paper": "P1",
+              "source": {
+                "en": "RStata Data Center",
+                "zh": "RStata数据中心",
+                "url": "https://tidyfriday.cn/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "firms-5",
+          "name": {
+            "en": "CNRDS Patent Transfer Data",
+            "zh": "专利转移数据"
+          },
+          "uses": [
+            {
+              "paper": "P1",
+              "source": {
+                "en": "Chinese Research Data Services (CNRDS)",
+                "zh": "中国研究数据服务平台（CNRDS）",
+                "url": "https://www.cnrds.com/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "registration",
+          "name": {
+            "en": "China Enterprise Registration Data",
+            "zh": "中国工商注册企业数据"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "NECIPS; authorized access via Xiamen University",
+                "zh": "国家企业信用信息公示系统；厦门大学授权获取",
+                "url": "https://econpub.xmu.edu.cn/elib/db_detail/9/"
+              },
+              "access": {
+                "en": "Authorization required",
+                "zh": "需授权"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ifr",
+          "name": {
+            "en": "IFR World Robotics",
+            "zh": "IFR世界机器人数据库"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "International Federation of Robotics",
+                "zh": "国际机器人联合会",
+                "url": "https://ifr.org/worldrobotics"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": {
+        "en": "Finance & Agriculture",
+        "zh": "金融与农业"
+      },
+      "datasets": [
+        {
+          "id": "finance-1",
+          "name": {
+            "en": "CSMAR Listed Company Data",
+            "zh": "CSMAR上市公司数据"
+          },
+          "uses": [
+            {
+              "paper": "P1",
+              "source": {
+                "en": "CSMAR Data Center",
+                "zh": "CSMAR数据中心",
+                "url": "https://data.csmar.com/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            },
+            {
+              "paper": "P6",
+              "source": {
+                "en": "CSMAR Data Center",
+                "zh": "CSMAR数据中心",
+                "url": "https://data.csmar.com/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "finance-2",
+          "name": {
+            "en": "CSMAR China Bank Research Database – Finance",
+            "zh": "CSMAR中国银行财务研究数据库"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "CSMAR Data Center",
+                "zh": "CSMAR数据中心",
+                "url": "https://data.csmar.com/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "finance-3",
+          "name": {
+            "en": "Rural Commercial Bank Regulatory Data",
+            "zh": "农村商业银行监管数据"
+          },
+          "uses": [
+            {
+              "paper": "P2",
+              "source": {
+                "en": "Former CBRC / CBIRC; research collaboration",
+                "zh": "原银监会、银保监会；研究合作取得",
+                "url": null
+              },
+              "access": {
+                "en": "Not public",
+                "zh": "不公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "finance-4",
+          "name": {
+            "en": "CARD–Qiyan China Agricultural Research Database",
+            "zh": "浙大卡特—企研中国涉农研究数据库"
+          },
+          "uses": [
+            {
+              "paper": "P2",
+              "source": {
+                "en": "China Academy for Rural Development, Zhejiang University; Qiyan Data",
+                "zh": "浙江大学中国农村发展研究院、企研数据",
+                "url": "https://card.qiyandata.com/database?rootId=cred-data&databaseId=3288d63348486c00d02dc09ff652d5ab"
+              },
+              "access": {
+                "en": "Authorization required",
+                "zh": "需授权"
+              }
+            }
+          ]
+        },
+        {
+          "id": "insurance",
+          "name": {
+            "en": "Critical Illness Insurance Policy and Claims Data",
+            "zh": "重大疾病保险保单与理赔数据"
+          },
+          "uses": [
+            {
+              "paper": "P7",
+              "source": {
+                "en": "A private life insurer in China (unnamed)",
+                "zh": "中国一家民营寿险公司（未披露名称）",
+                "url": null
+              },
+              "access": {
+                "en": "Public aggregates; microdata restricted",
+                "zh": "汇总数据公开；微观数据不公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "csmar-regional",
+          "name": {
+            "en": "CSMAR China Regional Economy Research Database",
+            "zh": "CSMAR中国区域经济研究数据库"
+          },
+          "uses": [
+            {
+              "paper": "P9",
+              "source": {
+                "en": "CSMAR Data Center",
+                "zh": "CSMAR数据中心",
+                "url": "https://data.csmar.com/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "title": {
+        "en": "Trade & Transport",
+        "zh": "贸易与交通"
+      },
+      "datasets": [
+        {
+          "id": "trade-1",
+          "name": {
+            "en": "China Customs Import and Export Data",
+            "zh": "中国海关进出口微观数据"
+          },
+          "uses": [
+            {
+              "paper": "P5",
+              "source": {
+                "en": "General Administration of Customs; institution-held versions",
+                "zh": "海关总署；论文使用机构持有版本",
+                "url": null
+              },
+              "access": {
+                "en": "Not public",
+                "zh": "不公开"
+              }
+            },
+            {
+              "paper": "P9",
+              "source": {
+                "en": "General Administration of Customs; RESSET via Tsinghua University",
+                "zh": "海关总署；清华大学订阅的锐思海关全口岸数据库",
+                "url": "https://www.resset.com/"
+              },
+              "access": {
+                "en": "Institutional subscription",
+                "zh": "机构订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "trade-2",
+          "name": {
+            "en": "WITS / UNCTAD TRAINS Tariff Data",
+            "zh": "关税数据"
+          },
+          "uses": [
+            {
+              "paper": "P5",
+              "source": {
+                "en": "World Bank WITS; UNCTAD TRAINS",
+                "zh": "世界银行WITS、UNCTAD TRAINS",
+                "url": "https://wits.worldbank.org/"
+              },
+              "access": {
+                "en": "Public / registration",
+                "zh": "公开／需注册"
+              }
+            }
+          ]
+        },
+        {
+          "id": "trade-3",
+          "name": {
+            "en": "Civil Aviation Routes Data",
+            "zh": "民航航线资料"
+          },
+          "uses": [
+            {
+              "paper": "P1",
+              "source": {
+                "en": "Civil Aviation Administration of China; Civil Aviation Statistical Yearbook",
+                "zh": "中国民航局、民航统计年鉴",
+                "url": "https://www.caac.gov.cn/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "baci",
+          "name": {
+            "en": "BACI International Trade Database",
+            "zh": "BACI国际贸易数据库"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "CEPII",
+                "zh": "法国国际经济研究中心（CEPII）",
+                "url": "https://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele_item.asp?id=37"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "climate",
+      "title": {
+        "en": "Climate & Macroeconomics",
+        "zh": "气候与宏观"
+      },
+      "datasets": [
+        {
+          "id": "climate-1",
+          "name": {
+            "en": "Tianqi.com Historical Weather Data",
+            "zh": "历史天气数据"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "Tianqi.com",
+                "zh": "天气网",
+                "url": "https://lishi.tianqi.com/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "climate-2",
+          "name": {
+            "en": "EM-DAT International Disaster Database",
+            "zh": "国际灾害数据库"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "CRED / UCLouvain",
+                "zh": "CRED／UCLouvain",
+                "url": "https://public.emdat.be/"
+              },
+              "access": {
+                "en": "Registration required",
+                "zh": "需注册"
+              }
+            }
+          ]
+        },
+        {
+          "id": "climate-3",
+          "name": {
+            "en": "China Climate Bulletin",
+            "zh": "中国气候公报"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "China Meteorological Administration; National Climate Centre",
+                "zh": "中国气象局、国家气候中心",
+                "url": "https://www.cma.gov.cn/zfxxgk/gknr/qxbg/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "climate-4",
+          "name": {
+            "en": "Gross Domestic Product Statistics",
+            "zh": "国内生产总值统计"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "National Bureau of Statistics of China",
+                "zh": "国家统计局",
+                "url": "https://data.stats.gov.cn/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "climate-5",
+          "name": {
+            "en": "EPS China Macroeconomic Database",
+            "zh": "EPS中国宏观经济数据库"
+          },
+          "uses": [
+            {
+              "paper": "P5",
+              "source": {
+                "en": "EPS China Data; original statistics from NBS",
+                "zh": "EPS数据平台；原始统计来自国家统计局",
+                "url": "https://olap.epsnet.com.cn/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "imf-exchange",
+          "name": {
+            "en": "IMF Exchange Rates",
+            "zh": "IMF汇率数据"
+          },
+          "uses": [
+            {
+              "paper": "P9",
+              "source": {
+                "en": "International Monetary Fund",
+                "zh": "国际货币基金组织",
+                "url": "https://data.imf.org/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wdi",
+          "name": {
+            "en": "World Development Indicators (WDI)",
+            "zh": "世界发展指标"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "World Bank",
+                "zh": "世界银行",
+                "url": "https://databank.worldbank.org/source/world-development-indicators"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            },
+            {
+              "paper": "P9",
+              "source": {
+                "en": "World Bank",
+                "zh": "世界银行",
+                "url": "https://databank.worldbank.org/source/world-development-indicators"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ceic",
+          "name": {
+            "en": "CEIC China Economic Data",
+            "zh": "CEIC中国经济数据"
+          },
+          "uses": [
+            {
+              "paper": "P9",
+              "source": {
+                "en": "CEIC Data",
+                "zh": "CEIC数据库",
+                "url": "https://www.ceicdata.com/en/products"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            },
+            {
+              "paper": "P10",
+              "source": {
+                "en": "CEIC Data",
+                "zh": "CEIC数据库",
+                "url": "https://www.ceicdata.com/en/products"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "city-yearbooks",
+          "name": {
+            "en": "China City and Regional Statistical Yearbooks",
+            "zh": "中国城市及地区统计年鉴"
+          },
+          "uses": [
+            {
+              "paper": "P1",
+              "source": {
+                "en": "National Bureau of Statistics; regional statistics bureaus",
+                "zh": "国家统计局及地方统计局",
+                "url": "https://www.stats.gov.cn/fw/zgtjzlg/"
+              },
+              "access": {
+                "en": "Published tables / library access",
+                "zh": "已出版统计表／图书馆获取"
+              }
+            },
+            {
+              "paper": "P2",
+              "source": {
+                "en": "National Bureau of Statistics; regional statistics bureaus",
+                "zh": "国家统计局及地方统计局",
+                "url": "https://www.stats.gov.cn/fw/zgtjzlg/"
+              },
+              "access": {
+                "en": "Published tables / library access",
+                "zh": "已出版统计表／图书馆获取"
+              }
+            },
+            {
+              "paper": "P7",
+              "source": {
+                "en": "National Bureau of Statistics; regional statistics bureaus",
+                "zh": "国家统计局及地方统计局",
+                "url": "https://www.stats.gov.cn/fw/zgtjzlg/"
+              },
+              "access": {
+                "en": "Published tables / library access",
+                "zh": "已出版统计表／图书馆获取"
+              }
+            },
+            {
+              "paper": "P12",
+              "source": {
+                "en": "National Bureau of Statistics; regional statistics bureaus",
+                "zh": "国家统计局及地方统计局",
+                "url": "https://www.stats.gov.cn/fw/zgtjzlg/"
+              },
+              "access": {
+                "en": "Published tables / library access",
+                "zh": "已出版统计表／图书馆获取"
+              }
+            }
+          ]
+        },
+        {
+          "id": "china-yearbook",
+          "name": {
+            "en": "China Statistical Yearbook",
+            "zh": "中国统计年鉴"
+          },
+          "uses": [
+            {
+              "paper": "P8",
+              "source": {
+                "en": "National Bureau of Statistics of China",
+                "zh": "国家统计局",
+                "url": "https://www.stats.gov.cn/sj/ndsj/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nbs-io",
+          "name": {
+            "en": "China Input-Output Tables",
+            "zh": "中国投入产出表"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "National Bureau of Statistics of China",
+                "zh": "国家统计局",
+                "url": "https://data.stats.gov.cn/dg/website/page.html#/pc/national/home"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ruciod",
+          "name": {
+            "en": "RUCioD Chinese Time-Series Input-Output Tables",
+            "zh": "RUCioD中国时间序列投入产出表"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "Renmin University of China; China Input-Output Association",
+                "zh": "中国人民大学；中国投入产出学会",
+                "url": "http://cioa.ruc.edu.cn/zlxz/trccb/7d9453899536434a9004d2db40e4bf6b.htm"
+              },
+              "access": {
+                "en": "Application for the version used",
+                "zh": "所用版本需申请"
+              }
+            }
+          ]
+        },
+        {
+          "id": "euklems",
+          "name": {
+            "en": "EUKLEMS & INTANProd",
+            "zh": "EUKLEMS与INTANProd生产率数据库"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "EUKLEMS & INTANProd, Luiss University",
+                "zh": "Luiss大学EUKLEMS与INTANProd项目",
+                "url": "https://euklems-intanprod-llee.luiss.it/download/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bis",
+          "name": {
+            "en": "BIS Bilateral Exchange Rates",
+            "zh": "BIS双边汇率数据"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Bank for International Settlements",
+                "zh": "国际清算银行",
+                "url": "https://data.bis.org/topics/XRU"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "gpr",
+          "name": {
+            "en": "Geopolitical Risk Index (GPR)",
+            "zh": "地缘政治风险指数"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Dario Caldara & Matteo Iacoviello",
+                "zh": "Dario Caldara与Matteo Iacoviello",
+                "url": "https://www.matteoiacoviello.com/gpr.htm"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pwt",
+          "name": {
+            "en": "Penn World Table",
+            "zh": "宾大世界表"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "Groningen Growth and Development Centre",
+                "zh": "格罗宁根增长与发展研究中心",
+                "url": "https://www.rug.nl/ggdc/productivity/pwt/pwt-releases/pwt9.0"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ewn",
+          "name": {
+            "en": "External Wealth of Nations",
+            "zh": "世界各国外部财富数据库"
+          },
+          "uses": [
+            {
+              "paper": "P4",
+              "source": {
+                "en": "Brookings Institution",
+                "zh": "布鲁金斯学会",
+                "url": "https://www.brookings.edu/articles/the-external-wealth-of-nations-database/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ict-capital",
+          "name": {
+            "en": "China Industry-Level ICT Capital Services",
+            "zh": "中国行业信息通信技术资本服务数据"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "Liu & Li; study replication materials",
+                "zh": "Liu与Li的研究复现资料",
+                "url": null
+              },
+              "access": {
+                "en": "Study series provided in replication package",
+                "zh": "复现包提供所用序列"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ict-price",
+          "name": {
+            "en": "ICT Price Index",
+            "zh": "信息通信技术价格指数"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "National Bureau of Statistics; author compilation",
+                "zh": "国家统计局价格统计；作者整理",
+                "url": "https://www.stats.gov.cn/fw/zgtjzlg/"
+              },
+              "access": {
+                "en": "Public source statistics",
+                "zh": "原始统计公开"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "title": {
+        "en": "Policy, History & Geography",
+        "zh": "政策、历史与地理"
+      },
+      "datasets": [
+        {
+          "id": "baidu-index",
+          "name": {
+            "en": "Baidu Search Index",
+            "zh": "百度指数"
+          },
+          "uses": [
+            {
+              "paper": "P7",
+              "source": {
+                "en": "Baidu",
+                "zh": "百度",
+                "url": "https://index.baidu.com/"
+              },
+              "access": {
+                "en": "Public interface / account access",
+                "zh": "公开查询界面／账号访问"
+              }
+            }
+          ]
+        },
+        {
+          "id": "baidu-poi",
+          "name": {
+            "en": "Baidu Maps Points of Interest",
+            "zh": "百度地图兴趣点数据"
+          },
+          "uses": [
+            {
+              "paper": "P7",
+              "source": {
+                "en": "Baidu Maps",
+                "zh": "百度地图",
+                "url": "https://lbsyun.baidu.com/index.php?title=jspopularGL"
+              },
+              "access": {
+                "en": "API access under provider terms",
+                "zh": "按平台规则使用API"
+              }
+            }
+          ]
+        },
+        {
+          "id": "civil-affairs",
+          "name": {
+            "en": "China Civil Affairs Statistical Yearbook",
+            "zh": "中国民政统计年鉴"
+          },
+          "uses": [
+            {
+              "paper": "P8",
+              "source": {
+                "en": "Ministry of Civil Affairs; China Statistics Press / China Society Press",
+                "zh": "民政部；中国统计出版社／中国社会出版社",
+                "url": null
+              },
+              "access": {
+                "en": "Purchase / library access",
+                "zh": "购买／图书馆获取"
+              }
+            }
+          ]
+        },
+        {
+          "id": "procuratorial",
+          "name": {
+            "en": "Procuratorial Yearbook of China",
+            "zh": "中国检察年鉴"
+          },
+          "uses": [
+            {
+              "paper": "P8",
+              "source": {
+                "en": "China Procuratorial Press; provincial procuratorates",
+                "zh": "中国检察出版社；各省检察院",
+                "url": null
+              },
+              "access": {
+                "en": "Purchase / library access",
+                "zh": "购买／图书馆获取"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tianditu",
+          "name": {
+            "en": "Tianditu Administrative Boundaries",
+            "zh": "天地图行政区划数据"
+          },
+          "uses": [
+            {
+              "paper": "P8",
+              "source": {
+                "en": "National Platform for Common GeoSpatial Information Services",
+                "zh": "国家地理信息公共服务平台",
+                "url": "https://cloudcenter.tianditu.gov.cn/administrativeDivision/"
+              },
+              "access": {
+                "en": "Registration required",
+                "zh": "需注册"
+              }
+            }
+          ]
+        },
+        {
+          "id": "jinshi",
+          "name": {
+            "en": "CNRDS Confucian Culture Database — Ming-Qing Jinshi",
+            "zh": "CNRDS儒家文化数据库：明清进士"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Chinese Research Data Services (CNRDS)",
+                "zh": "中国研究数据服务平台（CNRDS）",
+                "url": "https://www.cnrds.com/"
+              },
+              "access": {
+                "en": "Subscription required",
+                "zh": "需订阅"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ftz",
+          "name": {
+            "en": "Free Trade Zone Approvals and Foreign-Investment Catalogues",
+            "zh": "自贸区批复与外商投资产业目录"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "State Council; national foreign-investment policy documents",
+                "zh": "国务院及国家外商投资政策文件",
+                "url": "https://www.gov.cn/zhengce/"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "treaty-ports",
+          "name": {
+            "en": "Historical Treaty-Port Chronology",
+            "zh": "历史通商口岸资料"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Yan Zhongping et al., Selected Statistical Materials on Modern Chinese Economic History",
+                "zh": "严中平等《中国近代经济史统计资料选辑》",
+                "url": null
+              },
+              "access": {
+                "en": "Public transcription in replication package",
+                "zh": "复现包公开整理表"
+              }
+            }
+          ]
+        },
+        {
+          "id": "amap",
+          "name": {
+            "en": "Amap County Geocoding",
+            "zh": "高德地图县级地理编码"
+          },
+          "uses": [
+            {
+              "paper": "P10",
+              "source": {
+                "en": "Amap",
+                "zh": "高德地图",
+                "url": "https://lbs.amap.com/"
+              },
+              "access": {
+                "en": "API access under provider terms",
+                "zh": "按平台规则使用API"
+              }
+            }
+          ]
+        },
+        {
+          "id": "china-shapefiles",
+          "name": {
+            "en": "China Administrative Division Shapefiles",
+            "zh": "中国行政区划矢量边界"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "GaryBikini / ChinaAdminDivisonSHP",
+                "zh": "GaryBikini／ChinaAdminDivisonSHP项目",
+                "url": "https://doi.org/10.5281/zenodo.10624971"
+              },
+              "access": {
+                "en": "Public",
+                "zh": "公开"
+              }
+            }
+          ]
+        },
+        {
+          "id": "covid",
+          "name": {
+            "en": "City-Level COVID-19 Case Reports",
+            "zh": "城市新冠病例通报"
+          },
+          "uses": [
+            {
+              "paper": "P12",
+              "source": {
+                "en": "Municipal and provincial health commissions",
+                "zh": "各市、省卫生健康委员会",
+                "url": null
+              },
+              "access": {
+                "en": "Public reports",
+                "zh": "公开通报"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

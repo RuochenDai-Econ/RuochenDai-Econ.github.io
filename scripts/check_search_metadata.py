@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://ruochendai-econ.github.io'
-PAGES = {'index.html': '/', 'research/index.html': '/research/',
+PAGES = {'cer-open-data/index.html': '/cer-open-data/', 'index.html': '/', 'research/index.html': '/research/',
          'research/chinese/index.html': '/research/chinese/',
          'research/working-papers/index.html': '/research/working-papers/'}
 
@@ -38,4 +38,5 @@ for filename, path in PAGES.items():
     assert urlsplit(expected).hostname == 'ruochendai-econ.github.io'
     assert all('noindex' not in directive and 'none' not in directive for directive in metadata.robots)
     print(filename + ': ' + expected)
-print('PASS: all four pages identify themselves correctly and agree with the sitemap.')
+print('PASS: all five pages identify themselves correctly and agree with the sitemap.')
+

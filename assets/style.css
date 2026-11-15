@@ -118,3 +118,8 @@ h1, h2, h3 { color: var(--accent); }
 .grant { margin-bottom: 24px; max-width: 900px; }
 .grant h3 { font-size: 17px; font-weight: 500; margin: 0 0 8px; }
 .grant p { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+
+
+/* Let the four navigation links wrap on narrow screens. */
+.header-inner nav { flex-wrap: wrap; }
+@media (max-width: 680px) { .header-inner nav { gap: 8px 20px; } }

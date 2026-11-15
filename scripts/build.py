@@ -7,6 +7,7 @@ GitHub Pages serves the files directly; it does not need Python or JavaScript.
 import json
 from html import escape
 from pathlib import Path
+from cer_open_data import render_index
 
 ROOT = Path(__file__).resolve().parents[1]
 papers = json.loads((ROOT / 'content/papers.json').read_text())
@@ -17,12 +18,17 @@ SITE = 'https://ruochendai-econ.github.io'
 def page(title, body, current, prefix='', path='/'):
     navigation = []
     for label, nav_path, key in [('Home', '', 'home'), ('Research', 'research/', 'research'),
+                             ('CER Open Data', 'cer-open-data/', 'cer-open-data'),
                              (profile['cv_label'], profile['cv'], 'cv')]:
         active = ' aria-current="page"' if key == current else ''
         label_html = '<em>' + escape(label) + '</em>' if key == 'cv' else escape(label)
         navigation.append(f'<a href="{prefix}{nav_path or "./"}"{active}>{label_html}</a>')
     description = ('Ruochen Dai, economist at the Central University of Finance and Economics. '
                    'Research on entrepreneurship, firm dynamics, and development economics.')
+    if current == 'cer-open-data':
+        description = 'Data sources used in China Economic Review, with access information, article DOIs and paired Dataverse replication package DOIs.'
+    extra_style = ('<link rel="stylesheet" href="' + prefix + 'assets/cer-open-data.css">'
+                   if current == 'cer-open-data' else '')
     url = SITE + path
     document_title = ('Ruochen Dai 戴若尘 | Economist at CUFE' if current == 'home'
                       else title + ' | Ruochen Dai')
@@ -53,6 +59,7 @@ def page(title, body, current, prefix='', path='/'):
   <link rel="canonical" href="{url}">
   <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{prefix}assets/style.css">
+  {extra_style}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -225,3 +232,11 @@ home = f'''<main id="main" class="home-page">
 
 (ROOT / 'index.html').write_text(page('Home', home, 'home'))
 print(f'Built Home and three research categories with {len(papers)} papers and BibTeX files.')
+
+
+# CER Open Data contains source descriptions and references, never research records.
+catalog = json.loads((ROOT / 'content/cer_open_data.json').read_text())
+cer_directory = ROOT / 'cer-open-data'
+cer_directory.mkdir(exist_ok=True)
+(cer_directory / 'index.html').write_text(page('CER Open Data', render_index(catalog), 'cer-open-data', '../', '/cer-open-data/'))
+print('Built CER Open Data.')

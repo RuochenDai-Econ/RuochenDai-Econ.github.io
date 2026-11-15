@@ -74,3 +74,10 @@ BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为�
 发布前运行 `python3 scripts/check_search_metadata.py`，检查四个页面的 canonical 与 og:url 均指向本页，并与 sitemap 一致。2026-11-03 修复了导航循环覆盖页面路径、导致 canonical 拼接为无效域名的问题。
 
 2026-11-05 根据作者确认，Community Networks 标为 Journal of the European Economic Association 的 Revise and resubmit；新增 An Anatomy of Central State-Owned Enterprises in China（与 Loren Brandt、Xiaobo Zhang 合作），标为 Journal of Comparative Economics 的 Conditional acceptance。两篇保留在 Working Papers。网站和 CV 共 17 篇，仍有 16 个论文 PDF；新条目尚无提供的年份、PDF 或摘要，因此不生成这些信息和下载链接。
+
+
+## CER Open Data
+
+`cer-open-data/` lists selected sources used by CER studies. It contains English names with Chinese supporting labels, source and access information, and paired article and Dataverse DOIs. Common datasets are grouped; study-specific distributors and access conditions remain separate when they differ.
+
+Edit `content/cer_open_data.json` (index descriptions and bibliographic metadata only) and run `python3 scripts/build.py`, then `python3 scripts/check_search_metadata.py`. `scripts/cer_open_data.py` renders the table and `assets/cer-open-data.css` supplies its scoped styling. Do not add research data, author archives, internal review records or detailed sample attachments.
