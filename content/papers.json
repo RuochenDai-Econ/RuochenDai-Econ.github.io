@@ -293,6 +293,25 @@
     "review_status": "Revise and resubmit"
   },
   {
+    "id": "community-origins",
+    "title": "The Community Origins of Private Enterprise in China",
+    "authors": [
+      "Ruochen Dai",
+      "Dilip Mookherjee",
+      "Kaivan Munshi",
+      "Xiaobo Zhang"
+    ],
+    "year": 2021,
+    "language": "en",
+    "status": "working-paper",
+    "journal": "",
+    "doi": "",
+    "note": "Unpublished manuscript",
+    "display_note": "Unpublished manuscript, January 27, 2021. Circulated previously as “Community Networks and the Growth of Private Enterprise in China.”",
+    "pdf": "papers/community-origins.pdf",
+    "abstract": "This paper identifies and quantifies the role played by birth-county-based community networks in the growth of private enterprise in China. We document that historically determined population density is positively associated with localized trust in Chinese counties and the resulting quality of the business networks that emerged from those counties after privatization. This motivates a model of network-based spillovers that predicts how the dynamics of firm entry, concentration, and size vary with network quality — proxied by birth county population density — independently of other factors such as government infrastructure and agglomeration effects. The predictions of the model are validated over the 1990-2009 period with administrative data covering the universe of registered firms. Competing non-network-based explanations can explain some, but not all of the results. We subsequently estimate the structural parameters of the model and conduct counter-factual simulations, which indicate that overall firm entry in the economy over the 1995-2004 period and the associated capital stock in 2004 would have been 11% and 12.5% lower without the rural hometown networks. Additional counter-factual simulations shed light on industrial policy."
+  },
+  {
     "id": "export-automation",
     "title": "Export Destinations, Quality, and Automation: Evidence from China",
     "authors": [

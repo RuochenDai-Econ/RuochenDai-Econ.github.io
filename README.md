@@ -17,10 +17,10 @@ python3 -m http.server 8765 --bind 127.0.0.1
 - `content/profile.json`：简介、职位、邮箱和 CV 文件路径。
 - `content/papers.json`：论文标题、作者（保留论文署名顺序）、期刊、年份、卷（`volume`）、期（`number`）、页码（`pages`，用 `--` 连接）、文章编号（`article_number`）、摘要、PDF 和 DOI。
 - `content/coverage.json`：按论文 ID 对应的研究解读、报道、访谈与政策引用，仅保存公开来源的标题和链接；网页在各篇论文下显示。
-- `content/earlier-research.json`：早期未发表研究，列在 Working Papers 页底部，与当前论文及 CV 的 17 篇记录分开维护；链接到合作者已公开的论文版本。
+- `content/earlier-research.json`：可选的早期研究列表。已列为 Working Papers 的论文统一在 `content/papers.json` 维护。
 - `content/grants.json`：主页与 CV 共用的两个基金项目，保留可核实的名称、类别、编号和执行期；新项目英文标题为中文标题的译名。
 - `papers/`：对外提供的论文 PDF 与 BibTeX。
-- `cv/ruochen-dai-cv.pdf`：2026 年 10 月公开 CV。论文与网页共用 `content/papers.json`，仅保留作者确认的 16 篇；手机号和具体办公室不公开。旧的 2025 PDF 地址也提供同一份更新内容，以兼容已分享链接。
+- `cv/ruochen-dai-cv.pdf`：公开 CV。论文与网页共用 `content/papers.json`；手机号和具体办公室不公开。旧的 2025 PDF 地址也提供同一份更新内容，以兼容已分享链接。
 - `cv/source/`：公开 CV 的排版模板、生成后的 LaTeX 和样式文件，不含隐私信息。
 - `assets/style.css`：字号、颜色、间距与手机布局。
 - `scripts/build.py`：用 Python 标准库生成首页、三个独立论文分类页和 BibTeX。网站运行不依赖 Python 或 JavaScript。
@@ -55,7 +55,7 @@ python3 scripts/build.py
 
 ## 论文分类与引文
 
-Research 下的 English Publications、中文发表、Working Papers 分别显示 6、8、3 篇论文；摘要用原生 HTML details 默认收起，不依赖 JavaScript。
+Research 下的 English Publications、中文发表、Working Papers 分别显示 6、8、4 篇论文；摘要用原生 HTML details 默认收起，不依赖 JavaScript。
 
 BibTeX 将卷、期、页码分别输出为 `volume`、`number`、`pages`。为兼容传统 BibTeX 样式，Elsevier 文章编号也输出在 `pages` 中；`note` 记录 Forthcoming、Working paper 或明确的审稿状态；R&R 和 conditional acceptance 的期刊不写入已发表文献的 `journal` 字段。没有正式卷期的论文不编造卷期。网页与 BibTeX 共用这些结构化字段。
 

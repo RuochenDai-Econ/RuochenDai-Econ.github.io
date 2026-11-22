@@ -39,7 +39,7 @@ def entry(paper):
         citation += '.'
     if paper.get('review_status'):
         citation += r'\emph{' + tex(paper['review_journal']) + '}, ' + tex(paper['review_status'].lower()) + '.'
-    return r'\item ' + citation
+    return r'\item ' + citation.rstrip()
 
 def section(title, status, language):
     selected = [p for p in papers if p['status'] == status and p['language'] == language]
