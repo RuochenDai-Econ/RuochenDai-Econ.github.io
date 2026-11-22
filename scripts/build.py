@@ -185,6 +185,10 @@ for paper in earlier_research:
 all_ids = [p['id'] for p in papers + earlier_research]
 assert len(set(all_ids)) == len(all_ids)
 assert set(coverage).issubset(all_ids)
+for paper_id, groups in coverage.items():
+    labels = [group['label'] for group in groups]
+    assert set(labels) <= {'Author commentary', 'Policy citation'}, paper_id
+    assert len(labels) == len(set(labels)), paper_id
 
 categories = [
     ('english', 'English Publications', 'research/', 'publication', 'en'),

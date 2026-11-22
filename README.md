@@ -16,7 +16,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 - `content/profile.json`：简介、职位、邮箱和 CV 文件路径。
 - `content/papers.json`：论文标题、作者（保留论文署名顺序）、期刊、年份、卷（`volume`）、期（`number`）、页码（`pages`，用 `--` 连接）、文章编号（`article_number`）、摘要、PDF 和 DOI。
-- `content/coverage.json`：按论文 ID 对应的研究解读、报道、访谈与政策引用，仅保存公开来源的标题和链接；网页在各篇论文下显示。
+- `content/coverage.json`：每篇论文最多显示两栏。`Author commentary` 收录论文作者署名的原创研究解读，`Policy citation` 收录主要国际机构正式报告中的引用，附章节或页码。有对应链接时才显示该栏。
 - `content/earlier-research.json`：可选的早期研究列表。已列为 Working Papers 的论文统一在 `content/papers.json` 维护。
 - `content/grants.json`：主页与 CV 共用的两个基金项目，保留可核实的名称、类别、编号和执行期；新项目英文标题为中文标题的译名。
 - `papers/`：对外提供的论文 PDF 与 BibTeX。

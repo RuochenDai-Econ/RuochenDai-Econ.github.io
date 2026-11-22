@@ -1,7 +1,7 @@
 {
   "serial-entrepreneurship": [
     {
-      "label": "Research summaries",
+      "label": "Author commentary",
       "links": [
         {
           "label": "VoxChina (2022)",
@@ -12,16 +12,6 @@
           "label": "VoxDev (2026)",
           "url": "https://voxdev.org/topic/macroeconomics-growth/why-some-entrepreneurs-start-more-firms",
           "title": "Why some entrepreneurs start more firms"
-        }
-      ]
-    },
-    {
-      "label": "Interview",
-      "links": [
-        {
-          "label": "Faculti — Loren Brandt",
-          "url": "https://faculti.net/serial-entrepreneurship-in-china",
-          "title": "Serial Entrepreneurship in China"
         }
       ]
     },
@@ -38,7 +28,7 @@
   ],
   "clusters-covid": [
     {
-      "label": "Research summary",
+      "label": "Author commentary",
       "links": [
         {
           "label": "VoxChina (2021)",
@@ -46,119 +36,27 @@
           "title": "Industrial Clusters, Networks, and Resilience of Firms to the Covid-19 Shock in China"
         }
       ]
-    },
-    {
-      "label": "Institutional research citations",
-      "links": [
-        {
-          "label": "World Bank Working Paper 9633 (2021, p. 3)",
-          "url": "https://documents1.worldbank.org/curated/en/944641618508961003/pdf/Organizational-Resources-Country-Institutions-and-National-Culture-behind-Firm-Survival-and-Growth-during-COVID-19.pdf#page=5",
-          "title": "Organizational Resources, Country Institutions, and National Culture behind Firm Survival and Growth during COVID-19"
-        },
-        {
-          "label": "World Bank Working Paper 9997 (2022, p. 21)",
-          "url": "https://documents1.worldbank.org/curated/en/099724104052273280/pdf/IDU0426cc95a06afa0491e08abb0415a427f3ea5.pdf#page=23",
-          "title": "Firm Resources, Strategies, and Survival and Growth during COVID-19: Evidence from Two-Wave Global Surveys"
-        }
-      ]
-    }
-  ],
-  "community-networks": [
-    {
-      "label": "Research coverage",
-      "links": [
-        {
-          "label": "NBER Bulletin on Entrepreneurship (2023; earlier version)",
-          "url": "https://www.nber.org/be/20232/rural-population-density-linked-chinese-entrepreneurial-development",
-          "title": "Rural Population Density Linked to Chinese Entrepreneurial Development"
-        }
-      ]
-    },
-    {
-      "label": "Institutional research citation",
-      "links": [
-        {
-          "label": "World Bank Working Paper 11339 (2026, references, p. 41)",
-          "url": "https://documents1.worldbank.org/curated/en/099306303202617484/pdf/IDU-1d068c90-e8ed-43e7-b865-4666f35a2410.pdf#page=43",
-          "title": "Electrifying Africa’s Economic Transformation: What Reforms Should Governments Pursue?"
-        }
-      ]
-    },
-    {
-      "label": "Seminar",
-      "links": [
-        {
-          "label": "VDEV/CEPR/BREAD (2022)",
-          "url": "https://cepr.org/multimedia/vdev-cepr-bread-seminars-33-network-expansion-and-overhang-entrepreneurship-chinas",
-          "title": "Network Expansion and Overhang: Entrepreneurship in China's Structural Transformation"
-        }
-      ]
     }
   ],
   "community-origins": [
     {
-      "label": "Research summaries · 2018 version",
+      "label": "Author commentary",
       "links": [
         {
-          "label": "VoxDev",
+          "label": "VoxDev (on the 2018 draft)",
           "url": "https://voxdev.org/topic/firms/community-networks-and-growth-private-enterprise-china",
           "title": "Community networks and the growth of private enterprise in China"
-        },
-        {
-          "label": "Ideas for India (reprint)",
-          "url": "https://www.ideasforindia.in/topics/macroeconomics/community-networks-and-the-growth-of-private-enterprise-in-china1",
-          "title": "Community networks and the growth of private enterprise in China"
-        }
-      ]
-    },
-    {
-      "label": "Policy brief · 2018 version",
-      "links": [
-        {
-          "label": "Economic Development and Institutions (EDI)",
-          "url": "https://edi.opml.co.uk/wpcms/wp-content/uploads/2018/11/PolicyBrief_China-Community-Networks-2018.pdf",
-          "title": "Community networks and the growth of private enterprise in China"
-        }
-      ]
-    },
-    {
-      "label": "Research coverage",
-      "links": [
-        {
-          "label": "Peking University School of Economics (2019, 中文)",
-          "url": "https://econ.pku.edu.cn/xkzy/jjxx/xkdt/kylt/50170econ328680.htm",
-          "title": "戴若尘探讨原乡关系网络对中国私营企业成长的重要性"
-        }
-      ]
-    },
-    {
-      "label": "Policy citation",
-      "links": [
-        {
-          "label": "Economic Development and Institutions (2022)",
-          "url": "https://edi.opml.co.uk/wpcms/wp-content/uploads/2022/03/Formal_Informal_Institutions_Development_Contexts_Resistance_Leverage.pdf#page=5",
-          "title": "Formal and Informal Institutions in Development: Contexts, Resistance, and Leverage"
-        }
-      ]
-    },
-    {
-      "label": "Seminar",
-      "links": [
-        {
-          "label": "World Bank and University of Malaya (2018)",
-          "url": "https://www.worldbank.org/en/events/2018/11/22/community-networks-and-the-growth-of-private-enterprise-in-china",
-          "title": "Community Networks and the Growth of Private Enterprise in China"
         }
       ]
     }
   ],
   "ecommerce-entrepreneurship": [
     {
-      "label": "Policy report citation · earlier version",
+      "label": "Policy citation",
       "links": [
         {
-          "label": "World Bank & Alibaba Group (2019, pp. 77, 91)",
-          "url": "https://documents1.worldbank.org/curated/en/552791574361533437/pdf/E-commerce-Development-Experience-from-China.pdf#page=111",
+          "label": "World Bank & Alibaba Group (2019, pp. 77, 91) on the 2015 version",
+          "url": "https://documents1.worldbank.org/curated/en/552791574361533437/pdf/E-commerce-Development-Experience-from-China.pdf#page=97",
           "title": "E-Commerce Development: Experience from China"
         }
       ]
@@ -172,21 +70,6 @@
           "label": "Asian Development Bank Institute (2021, ch. 8, pp. 286–288)",
           "url": "https://www.adb.org/sites/default/files/publication/739596/covid-19-impacts-and-policy-options-web.pdf#page=310",
           "title": "COVID-19 Impacts and Policy Options: An Asian Perspective"
-        }
-      ]
-    },
-    {
-      "label": "Institutional research citations",
-      "links": [
-        {
-          "label": "World Bank Working Paper 9633 (2021, p. 3)",
-          "url": "https://documents1.worldbank.org/curated/en/944641618508961003/pdf/Organizational-Resources-Country-Institutions-and-National-Culture-behind-Firm-Survival-and-Growth-during-COVID-19.pdf#page=5",
-          "title": "Organizational Resources, Country Institutions, and National Culture behind Firm Survival and Growth during COVID-19"
-        },
-        {
-          "label": "World Bank Working Paper 9997 (2022, p. 21)",
-          "url": "https://documents1.worldbank.org/curated/en/099724104052273280/pdf/IDU0426cc95a06afa0491e08abb0415a427f3ea5.pdf#page=23",
-          "title": "Firm Resources, Strategies, and Survival and Growth during COVID-19: Evidence from Two-Wave Global Surveys"
         }
       ]
     }
