@@ -69,6 +69,10 @@ h1, h2, h3 { color: var(--accent); }
 .journal em { font-weight: 500; }
 .paper-links { margin-bottom: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-size: 14px; }
 .paper-links span { color: #a69a9a; }
+.paper-coverage { margin-top: 9px; font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.paper-coverage p { margin: 3px 0 0; }
+.coverage-label { color: var(--muted); }
+.earlier-research { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 28px; }
 .paper-abstract { margin-top: 8px; }
 .paper-abstract summary { width: fit-content; cursor: pointer; color: var(--accent); font-size: 14px; }
 .paper-abstract summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }

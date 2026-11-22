@@ -11,6 +11,8 @@ from cer_open_data import render_index
 
 ROOT = Path(__file__).resolve().parents[1]
 papers = json.loads((ROOT / 'content/papers.json').read_text())
+earlier_research = json.loads((ROOT / 'content/earlier-research.json').read_text())
+coverage = json.loads((ROOT / 'content/coverage.json').read_text())
 profile = json.loads((ROOT / 'content/profile.json').read_text())
 SITE = 'https://ruochendai-econ.github.io'
 
@@ -89,6 +91,16 @@ def publication_details(paper):
     return details or paper.get('note', '')
 
 
+def coverage_rows(paper_id):
+    rows = []
+    for group in coverage.get(paper_id, []):
+        links = [f'<a href="{escape(link["url"])}" title="{escape(link["title"])}">'
+                 f'{escape(link["label"])}</a>' for link in group['links']]
+        rows.append(f'<p><span class="coverage-label">{escape(group["label"])}:</span> '
+                    + ' · '.join(links) + '</p>')
+    return '        <div class="paper-coverage">' + ''.join(rows) + '</div>\n' if rows else ''
+
+
 def paper_row(paper, prefix):
     chinese = paper['language'] == 'zh'
     coauthors = [name for name in paper['authors'] if name not in ('Ruochen Dai', '戴若尘')]
@@ -105,9 +117,13 @@ def paper_row(paper, prefix):
     if paper.get('review_status'):
         journal = (f'<p class="journal"><em>{escape(paper["review_journal"])}</em>'
                    f' — {escape(paper["review_status"])}.</p>')
+    if paper.get('display_note'):
+        journal += f'<p class="journal">{escape(paper["display_note"])}</p>'
     links = []
     if paper.get('pdf'):
         links.append(f'<a href="{prefix}{paper["pdf"]}">Paper</a>')
+    elif paper.get('paper_url'):
+        links.append(f'<a href="{escape(paper["paper_url"])}">Paper</a>')
     if paper['doi']:
         links.append(f'<a href="https://doi.org/{escape(paper["doi"])}">Journal</a>')
     links.append(f'<a href="{prefix}papers/{paper["id"]}.bib" download>BibTeX</a>')
@@ -124,7 +140,7 @@ def paper_row(paper, prefix):
         <p class="coauthors">{escape(authors)}</p>
         {journal}
         <p class="paper-links">{' <span aria-hidden="true">|</span> '.join(links)}</p>
-      </div>
+{coverage_rows(paper['id'])}      </div>
 {abstract}    </article>'''
 
 
@@ -146,7 +162,7 @@ def write_bibtex(paper):
     if paper.get('review_status'):
         fields['note'] = paper['review_status'] + ', ' + paper['review_journal']
     fields['url'] = (SITE + '/' + paper['pdf'] if paper.get('pdf') else
-                     SITE + '/research/working-papers/#' + paper['id'])
+                     paper.get('paper_url', SITE + '/research/working-papers/#' + paper['id']))
     kind = 'article' if paper['status'] == 'publication' else 'unpublished'
     # Escape TeX special characters without changing author order or title case.
     lines = [f'@{kind}{{{paper["id"]},']
@@ -163,6 +179,12 @@ for paper in papers:
         assert (ROOT / paper['pdf']).is_file(), paper['pdf']
     write_bibtex(paper)
 assert len({p['id'] for p in papers}) == len(papers)
+for paper in earlier_research:
+    assert paper['status'] == 'unpublished'
+    write_bibtex(paper)
+all_ids = [p['id'] for p in papers + earlier_research]
+assert len(set(all_ids)) == len(all_ids)
+assert set(coverage).issubset(all_ids)
 
 categories = [
     ('english', 'English Publications', 'research/', 'publication', 'en'),
@@ -177,6 +199,12 @@ for category, label, path, status, language in categories:
         active = ' aria-current="page"' if key == category else ''
         navigation.append(f'<a href="{prefix}{nav_path}"{active}>{nav_label}</a>')
     rows = '\n'.join(paper_row(p, prefix) for p in selected)
+    archive = ''
+    if category == 'working' and earlier_research:
+        archive_rows = '\n'.join(paper_row(p, prefix) for p in earlier_research)
+        archive = ('    <section class="earlier-research" aria-labelledby="earlier-heading">'
+                   '<h2 id="earlier-heading">Earlier unpublished research</h2>'
+                   + archive_rows + '</section>\n')
     research = f'''<main id="main" class="research-page">
     <div class="page-heading"><h1>Research</h1>
       <nav class="section-nav" aria-label="Research categories">{' '.join(navigation)}</nav>
@@ -185,7 +213,7 @@ for category, label, path, status, language in categories:
       <h2 id="category-heading">{label}</h2>
       {rows}
     </section>
-    <p class="back-top"><a href="#main">Back to top ↑</a></p>
+{archive}    <p class="back-top"><a href="#main">Back to top ↑</a></p>
   </main>'''
     destination = ROOT / path / 'index.html'
     destination.parent.mkdir(parents=True, exist_ok=True)

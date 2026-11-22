@@ -16,6 +16,8 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 - `content/profile.json`：简介、职位、邮箱和 CV 文件路径。
 - `content/papers.json`：论文标题、作者（保留论文署名顺序）、期刊、年份、卷（`volume`）、期（`number`）、页码（`pages`，用 `--` 连接）、文章编号（`article_number`）、摘要、PDF 和 DOI。
+- `content/coverage.json`：按论文 ID 对应的研究解读、报道、访谈与政策引用，仅保存公开来源的标题和链接；网页在各篇论文下显示。
+- `content/earlier-research.json`：早期未发表研究，列在 Working Papers 页底部，与当前论文及 CV 的 17 篇记录分开维护；链接到合作者已公开的论文版本。
 - `content/grants.json`：主页与 CV 共用的两个基金项目，保留可核实的名称、类别、编号和执行期；新项目英文标题为中文标题的译名。
 - `papers/`：对外提供的论文 PDF 与 BibTeX。
 - `cv/ruochen-dai-cv.pdf`：2026 年 10 月公开 CV。论文与网页共用 `content/papers.json`，仅保留作者确认的 16 篇；手机号和具体办公室不公开。旧的 2025 PDF 地址也提供同一份更新内容，以兼容已分享链接。

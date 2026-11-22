@@ -1,0 +1,90 @@
+{
+  "serial-entrepreneurship": [
+    {
+      "label": "Research summaries",
+      "links": [
+        {
+          "label": "VoxChina (2022)",
+          "url": "https://voxchina.org/show-3-283.html",
+          "title": "Serial Entrepreneurship in China"
+        },
+        {
+          "label": "VoxDev (2026)",
+          "url": "https://voxdev.org/topic/macroeconomics-growth/why-some-entrepreneurs-start-more-firms",
+          "title": "Why some entrepreneurs start more firms"
+        }
+      ]
+    },
+    {
+      "label": "Interview",
+      "links": [
+        {
+          "label": "Faculti — Loren Brandt",
+          "url": "https://faculti.net/serial-entrepreneurship-in-china",
+          "title": "Serial Entrepreneurship in China"
+        }
+      ]
+    },
+    {
+      "label": "Policy citation",
+      "links": [
+        {
+          "label": "EBRD Transition Report 2026–27 (ch. 4, p. 113, fn. 17)",
+          "url": "https://www.ebrd.com/content/dam/ebrd_dxp/assets/pdfs/office-of-the-chief-economist/transition-report-archive/Transition%20Report%202026-27/chapters/transition-report-2026-27-ch4.pdf#page=12",
+          "title": "EBRD Transition Report 2026–27, Chapter 4"
+        }
+      ]
+    }
+  ],
+  "clusters-covid": [
+    {
+      "label": "Research summary",
+      "links": [
+        {
+          "label": "VoxChina (2021)",
+          "url": "https://voxchina.org/show-3-212.html",
+          "title": "Industrial Clusters, Networks, and Resilience of Firms to the Covid-19 Shock in China"
+        }
+      ]
+    }
+  ],
+  "community-networks": [
+    {
+      "label": "Research coverage",
+      "links": [
+        {
+          "label": "NBER Bulletin on Entrepreneurship (2023; earlier version)",
+          "url": "https://www.nber.org/be/20232/rural-population-density-linked-chinese-entrepreneurial-development",
+          "title": "Rural Population Density Linked to Chinese Entrepreneurial Development"
+        }
+      ]
+    }
+  ],
+  "community-origins": [
+    {
+      "label": "Research summaries · 2018 version",
+      "links": [
+        {
+          "label": "VoxDev",
+          "url": "https://voxdev.org/topic/firms/community-networks-and-growth-private-enterprise-china",
+          "title": "Community networks and the growth of private enterprise in China"
+        },
+        {
+          "label": "Ideas for India (reprint)",
+          "url": "https://www.ideasforindia.in/topics/macroeconomics/community-networks-and-the-growth-of-private-enterprise-in-china1",
+          "title": "Community networks and the growth of private enterprise in China"
+        }
+      ]
+    },
+    {
+      "label": "Policy brief · 2018 version",
+      "links": [
+        {
+          "label": "Economic Development and Institutions (EDI)",
+          "url": "https://edi.opml.co.uk/wpcms/wp-content/uploads/2018/11/PolicyBrief_China-Community-Networks-2018.pdf",
+          "title": "Community networks and the growth of private enterprise in China"
+        }
+      ]
+    }
+  ]
+}
