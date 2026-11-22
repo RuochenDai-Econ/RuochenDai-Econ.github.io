@@ -46,6 +46,21 @@
           "title": "Industrial Clusters, Networks, and Resilience of Firms to the Covid-19 Shock in China"
         }
       ]
+    },
+    {
+      "label": "Institutional research citations",
+      "links": [
+        {
+          "label": "World Bank Working Paper 9633 (2021, p. 3)",
+          "url": "https://documents1.worldbank.org/curated/en/944641618508961003/pdf/Organizational-Resources-Country-Institutions-and-National-Culture-behind-Firm-Survival-and-Growth-during-COVID-19.pdf#page=5",
+          "title": "Organizational Resources, Country Institutions, and National Culture behind Firm Survival and Growth during COVID-19"
+        },
+        {
+          "label": "World Bank Working Paper 9997 (2022, p. 21)",
+          "url": "https://documents1.worldbank.org/curated/en/099724104052273280/pdf/IDU0426cc95a06afa0491e08abb0415a427f3ea5.pdf#page=23",
+          "title": "Firm Resources, Strategies, and Survival and Growth during COVID-19: Evidence from Two-Wave Global Surveys"
+        }
+      ]
     }
   ],
   "community-networks": [
@@ -83,6 +98,45 @@
           "label": "Economic Development and Institutions (EDI)",
           "url": "https://edi.opml.co.uk/wpcms/wp-content/uploads/2018/11/PolicyBrief_China-Community-Networks-2018.pdf",
           "title": "Community networks and the growth of private enterprise in China"
+        }
+      ]
+    }
+  ],
+  "ecommerce-entrepreneurship": [
+    {
+      "label": "Policy report citation · earlier version",
+      "links": [
+        {
+          "label": "World Bank & Alibaba Group (2019, pp. 77, 91)",
+          "url": "https://documents1.worldbank.org/curated/en/552791574361533437/pdf/E-commerce-Development-Experience-from-China.pdf#page=111",
+          "title": "E-Commerce Development: Experience from China"
+        }
+      ]
+    }
+  ],
+  "smes-covid": [
+    {
+      "label": "Policy publication · earlier version",
+      "links": [
+        {
+          "label": "Asian Development Bank Institute (2021, ch. 8, pp. 286–288)",
+          "url": "https://www.adb.org/sites/default/files/publication/739596/covid-19-impacts-and-policy-options-web.pdf#page=310",
+          "title": "COVID-19 Impacts and Policy Options: An Asian Perspective"
+        }
+      ]
+    },
+    {
+      "label": "Institutional research citations",
+      "links": [
+        {
+          "label": "World Bank Working Paper 9633 (2021, p. 3)",
+          "url": "https://documents1.worldbank.org/curated/en/944641618508961003/pdf/Organizational-Resources-Country-Institutions-and-National-Culture-behind-Firm-Survival-and-Growth-during-COVID-19.pdf#page=5",
+          "title": "Organizational Resources, Country Institutions, and National Culture behind Firm Survival and Growth during COVID-19"
+        },
+        {
+          "label": "World Bank Working Paper 9997 (2022, p. 21)",
+          "url": "https://documents1.worldbank.org/curated/en/099724104052273280/pdf/IDU0426cc95a06afa0491e08abb0415a427f3ea5.pdf#page=23",
+          "title": "Firm Resources, Strategies, and Survival and Growth during COVID-19: Evidence from Two-Wave Global Surveys"
         }
       ]
     }
